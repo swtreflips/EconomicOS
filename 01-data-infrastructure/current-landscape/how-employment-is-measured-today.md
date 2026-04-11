@@ -394,7 +394,7 @@ In developing countries, social media platforms are used extensively for economi
 Satellite imagery and nighttime light data (from VIIRS, the Visible Infrared Imaging Radiometer Suite) have been used in economic research to estimate economic activity in countries with poor statistical systems.
 
 **What it could tell us:**
-- Nighttime light intensity correlates with economic activity and has been used as a GDP proxy for countries with unreliable national accounts (including Venezuela)
+- Nighttime light intensity correlates with economic activity and has been used as a GDP proxy for countries with unreliable national accounts
 - Construction activity visible from satellite imagery proxies construction employment
 - Agricultural land use changes signal agricultural employment shifts
 - Port activity and shipping container counts proxy trade-related employment
@@ -445,7 +445,7 @@ Traditional surveys in developing countries provide national and major-city esti
 
 ### 7.3 The Validation Challenge
 
-In the US, alternative data sources can be validated against the BLS benchmark -- imperfect, but a known quantity. In Venezuela, there is no reliable benchmark. How do you validate a real-time employment proxy when the official statistics themselves are unreliable?
+In the US, alternative data sources can be validated against the BLS benchmark -- imperfect, but a known quantity. In a crisis economy, there is no reliable benchmark. How do you validate a real-time employment proxy when the official statistics themselves are unreliable?
 
 Possible approaches:
 - **Cross-validation between independent data streams**: If mobile payment volumes, job postings, and commuting patterns all move in the same direction, confidence increases even without an official benchmark.
