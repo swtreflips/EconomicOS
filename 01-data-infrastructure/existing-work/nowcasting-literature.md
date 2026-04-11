@@ -185,25 +185,25 @@ The literature above is predominantly focused on developed economies (US, EU) wi
 
 ### The Data-Poor Environment Problem
 
-Most nowcasting models assume a reasonably complete set of monthly indicators (employment, industrial production, retail sales, housing) published by credible agencies. In Venezuela, many of these series don't exist, are published sporadically, or lack credibility. This means:
+Most nowcasting models assume a reasonably complete set of monthly indicators (employment, industrial production, retail sales, housing) published by credible agencies. In a crisis economy, many of these series don't exist, are published sporadically, or lack credibility. This means:
 
 - **Fewer traditional inputs**: The model can't rely on 50+ monthly series because they don't exist
 - **Greater reliance on alternative data**: Satellite nighttime lights, mobile payment volumes, web-scraped prices, and exchange rate data become primary inputs rather than supplements
-- **No reliable benchmark**: In the US, you validate your nowcast against the official GDP release. In Venezuela, even the official GDP number is questionable. What do you validate against?
+- **No reliable benchmark**: In the US, you validate your nowcast against the official GDP release. In a crisis economy, even the official GDP number is questionable. What do you validate against?
 
 ### Relevant Developing Country Work
 
-**Henderson, Storeygard, and Weil (2012) -- "Measuring Economic Growth from Outer Space"** (*American Economic Review*): Demonstrated that satellite nighttime light data correlates with GDP growth and can be used as an independent measure of economic activity, particularly valuable in countries with unreliable official statistics. This paper is foundational for econOS's use of satellite data in Venezuela.
+**Henderson, Storeygard, and Weil (2012) -- "Measuring Economic Growth from Outer Space"** (*American Economic Review*): Demonstrated that satellite nighttime light data correlates with GDP growth and can be used as an independent measure of economic activity, particularly valuable in countries with unreliable official statistics. This paper is foundational for econOS's use of satellite data in crisis economies.
 
 **Pinkovskiy and Sala-i-Martin (2016) -- "Lights, Camera... Income!"**: Extended the nighttime lights approach and showed it can improve GDP estimates in data-poor countries by combining satellite data with whatever official statistics exist.
 
-**The Billion Prices Project in Latin America**: MIT's BPP/PriceStats explicitly covered Venezuela and Argentina -- two countries with known inflation measurement problems. In Venezuela, the web-scraped price index diverged dramatically from the official BCV CPI during the period when the government was suppressing inflation numbers. This is direct proof of concept for econOS's real-time price tracking approach.
+**The Billion Prices Project**: MIT's BPP/PriceStats explicitly covered crisis economies with known inflation measurement problems. In these countries, the web-scraped price index diverged dramatically from the official CPI during periods when governments were suppressing inflation numbers. This is direct proof of concept for econOS's real-time price tracking approach.
 
-**Steve Hanke's Hyperinflation Estimates**: Professor Steve Hanke at Johns Hopkins published independent inflation estimates for Venezuela using purchasing power parity (PPP) methodology based on exchange rate movements. While methodologically different from direct price measurement, this work demonstrated that independent inflation measurement was both possible and necessary when official data was suppressed.
+**Independent Hyperinflation Estimates**: Researchers such as Steve Hanke at Johns Hopkins published independent inflation estimates for crisis economies using purchasing power parity (PPP) methodology based on exchange rate movements. While methodologically different from direct price measurement, this work demonstrated that independent inflation measurement was both possible and necessary when official data was suppressed.
 
-**The Venezuelan Opposition (Asamblea Nacional) Inflation Index**: During the data blackout, the opposition-controlled National Assembly commissioned its own inflation estimates using direct price collection. This was a political act as much as an economic one -- but it demonstrated the demand for independent economic measurement.
+**Legislative and Civil Society Inflation Indexes**: During data blackouts, opposition parties and civil society organizations in crisis economies have commissioned their own inflation estimates using direct price collection. These efforts are political acts as much as economic ones -- but they demonstrate the demand for independent economic measurement.
 
-**World Bank and IMF Estimation for Venezuela**: Both institutions had to develop their own methodologies for estimating Venezuelan GDP and inflation when official data stopped being published. Their approaches relied on cross-country models, satellite data, trade partner data, and informal sources -- essentially improvised nowcasting for a data-void economy.
+**World Bank and IMF Estimation for Data-Void Economies**: Both institutions have had to develop their own methodologies for estimating GDP and inflation when official data stopped being published. Their approaches relied on cross-country models, satellite data, trade partner data, and informal sources -- essentially improvised nowcasting for data-void economies.
 
 ### The Leapfrog Opportunity
 
@@ -216,7 +216,7 @@ In developed countries, nowcasting improves on existing (lagging) official data.
 3. The model doesn't need to match official statistics -- it needs to be more credible than them
 4. The smaller, less complex economy is actually easier to instrument comprehensively
 
-Venezuela's economy (~$100B) is roughly 1/280th the size of the US economy. Colombia (~$340B) is roughly 1/80th. Fewer sectors, smaller geography, fewer data sources needed. A nowcasting approach that would be partial and approximate in the US could achieve near-comprehensive coverage in Venezuela.
+A developing country economy in the $100-350B range is a fraction of the size of the US economy. Fewer sectors, smaller geography, fewer data sources needed. A nowcasting approach that would be partial and approximate in the US could achieve near-comprehensive coverage in a smaller developing economy.
 
 ---
 
@@ -227,13 +227,13 @@ The nowcasting literature provides both the intellectual foundation and the prac
 **What to adopt**:
 - The DFM/Kalman filter framework for combining mixed-frequency data is the right starting point
 - The news decomposition approach (which data release moved the estimate) provides the transparency econOS requires
-- The satellite nighttime lights methodology (Henderson et al.) is directly applicable to Venezuela
-- The Billion Prices Project methodology for web-scraped inflation is proven for Latin America
+- The satellite nighttime lights methodology (Henderson et al.) is directly applicable to crisis economies
+- The Billion Prices Project methodology for web-scraped inflation is proven for developing countries
 
-**What to adapt for Venezuela/Colombia**:
+**What to adapt for developing countries**:
 - Traditional macro series are sparse or unreliable -- alternative data must be primary, not supplementary
 - Validation can't rely on official statistics alone -- cross-validation between independent sources (satellite vs. transaction vs. web-scraped) replaces validation against official benchmarks
-- The informal economy (40-60%+ in Venezuela) is invisible to most data sources -- any methodology must acknowledge and estimate this gap rather than ignoring it
+- The informal economy (40-60%+ in crisis economies) is invisible to most data sources -- any methodology must acknowledge and estimate this gap rather than ignoring it
 - Currency instability and dollarization mean that nominal data is nearly meaningless without exchange rate adjustment -- all real-time indicators must be currency-aware
 
 **What to go beyond**:

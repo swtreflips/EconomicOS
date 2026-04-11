@@ -2,11 +2,11 @@
 
 ## What This Document Is
 
-These are the principles that govern every design decision in econOS -- from which data source to prioritize, to how a dashboard renders on a phone in Maracaibo, to whether a feature ships this month or waits for better data. They are not aspirations. They are decision-making tools.
+These are the principles that govern every design decision in econOS -- from which data source to prioritize, to how a dashboard renders on a phone in a developing country, to whether a feature ships this month or waits for better data. They are not aspirations. They are decision-making tools.
 
 Every principle here resolves a real tradeoff. When two good ideas conflict, these principles determine which one wins. When a contributor asks "should we build this?" the answer comes from running the proposal against these principles and seeing what survives.
 
-The principles are grounded in a specific context: econOS is open-source economic data infrastructure for Venezuela and Colombia, built on the thesis that economic growth is an optimization problem. Better information leads to better resource allocation, which leads to less waste, higher productivity, and faster growth. Every principle here serves that chain.
+The principles are grounded in a specific context: econOS is open-source economic data infrastructure for developing and emerging economies, built on the thesis that economic growth is an optimization problem. Better information leads to better resource allocation, which leads to less waste, higher productivity, and faster growth. Every principle here serves that chain.
 
 ---
 
@@ -18,29 +18,29 @@ The principles are grounded in a specific context: econOS is open-source economi
 
 econOS exists to improve resource allocation. Not to publish data for its own sake. Not to build elegant systems. Not to win academic citations. The entire justification for the project -- the chain from information to allocation to productivity to growth -- depends on the data actually reaching someone making an actual decision about an actual scarce resource.
 
-In Venezuela, the stakes of this principle are concrete. A family deciding whether to invest their savings in a bakery or a motorcycle repair shop. A nurse weighing Bogota against Lima. A student choosing between systems engineering and accounting. A diaspora family sending $200 home and wondering whether it should go to Caracas or Barquisimeto. These are allocation decisions. The quality of these decisions, multiplied across millions of people, IS the Venezuelan recovery.
+In developing countries, the stakes of this principle are concrete. A family deciding whether to invest their savings in a bakery or a motorcycle repair shop. A nurse weighing one city against another. A student choosing between engineering and accounting. A diaspora family sending $200 home and wondering which city needs it most. These are allocation decisions. The quality of these decisions, multiplied across millions of people, IS the recovery.
 
-Hsieh and Klenow (2009) showed that misallocation in developing countries reduces manufacturing productivity by 30-60%. For Venezuela's roughly $100B economy, even a 10% reduction in misallocation means $10B in additional annual output. That number is not theoretical. It is the cumulative effect of millions of people making slightly better decisions about where to work, what to build, and where to invest -- because they had better information.
+Hsieh and Klenow (2009) showed that misallocation in developing countries reduces manufacturing productivity by 30-60%. For a developing economy of roughly $100B, even a 10% reduction in misallocation means $10B in additional annual output. That number is not theoretical. It is the cumulative effect of millions of people making slightly better decisions about where to work, what to build, and where to invest -- because they had better information.
 
 ### What it means in practice
 
 - Before building any feature, ask: who is the allocator, what is the resource, and how does this help them allocate it better?
 - A price tracker is allocation-first because it tells a worker what their wages actually buy, tells a business what to charge, and tells a diaspora family what their remittance purchases.
 - A pretty visualization that doesn't connect to a decision anyone is making fails this test, no matter how technically impressive.
-- Data granularity decisions are allocation decisions. National average inflation is less useful for allocation than city-level prices, because nobody lives in "national average." The worker lives in Valencia. The business is in Maracaibo. The allocation happens locally.
+- Data granularity decisions are allocation decisions. National average inflation is less useful for allocation than city-level prices, because nobody lives in "national average." The worker lives in a specific city. The business is in a specific neighborhood. The allocation happens locally.
 - If a feature helps researchers but not the bakery owner, it's lower priority. Researchers are not the primary allocators in a recovering economy. Workers, small business owners, students, and diaspora families are.
 
 ### The tradeoff it resolves
 
 **Allocation-first vs. comprehensiveness.** The temptation in any data project is to build the complete picture before shipping anything. Track every sector, every region, every indicator. econOS rejects this. The question is never "is this data interesting?" but "does someone need this data to make a better decision with their money, time, or skills?" If yes, ship it. If it's interesting but doesn't connect to allocation, it waits.
 
-This principle also resolves the **academic vs. practical** tension. Academic rigor is important, but econOS is not a research project. It is infrastructure for people making decisions under uncertainty with scarce resources. A methodologically imperfect price signal that a shop owner in Petare can use today is worth more than a methodologically perfect one that arrives in six months.
+This principle also resolves the **academic vs. practical** tension. Academic rigor is important, but econOS is not a research project. It is infrastructure for people making decisions under uncertainty with scarce resources. A methodologically imperfect price signal that a shop owner can use today is worth more than a methodologically perfect one that arrives in six months.
 
 ### When to break it
 
 When building foundational infrastructure that doesn't directly face a user but enables future allocation-improving features. A data pipeline, a scraping framework, a validation methodology -- these don't help anyone allocate resources directly, but without them nothing else works. The test here is: does this infrastructure unlock allocation-improving features within a reasonable timeframe? If yes, it passes. If it's infrastructure for infrastructure's sake, it fails.
 
-Also break it for data that serves accountability rather than individual allocation -- for example, tracking whether official BCV data diverges from market reality. This doesn't help a specific person allocate better, but it serves the broader goal of building a trustworthy information environment. The exception should be narrow: accountability data that disciplines the information ecosystem, not general-purpose transparency for its own sake.
+Also break it for data that serves accountability rather than individual allocation -- for example, tracking whether official central bank data diverges from market reality. This doesn't help a specific person allocate better, but it serves the broader goal of building a trustworthy information environment. The exception should be narrow: accountability data that disciplines the information ecosystem, not general-purpose transparency for its own sake.
 
 ---
 
@@ -50,9 +50,9 @@ Also break it for data that serves accountability rather than individual allocat
 
 ### Why it matters
 
-This principle is not idealism. It is a direct response to what happened in Venezuela.
+This principle is not idealism. It is a direct response to what has happened in multiple developing countries.
 
-The BCV stopped publishing economic data. The government suppressed inflation statistics during hyperinflation that reached an estimated 130,000% in 2018. Official GDP figures, when they existed, were not credible. The country experienced a 75% GDP contraction -- worse than the US Great Depression -- and the institution responsible for measuring the economy went dark. Seven million people emigrated with almost no reliable data to guide the most consequential decisions of their lives.
+Central banks and statistical agencies have stopped publishing economic data during crises. Governments have suppressed inflation statistics during hyperinflation. Official GDP figures, when they existed, were not credible. Countries have experienced catastrophic economic contractions -- and the institutions responsible for measuring the economy went dark. Millions of people emigrated with almost no reliable data to guide the most consequential decisions of their lives.
 
 This is what happens when economic information is controlled by a single institution with political incentives to suppress it. The information layer breaks, the allocation layer breaks, and the economy follows.
 
@@ -76,45 +76,45 @@ The analogy is not to open-source software projects that happen to be free. The 
 
 ### When to break it
 
-Privacy. Individual-level data is never published, even if it is technically accessible. Aggregate spending in a neighborhood is public; a specific family's transactions are not. This is not a difficult call in most cases, but it becomes harder in small markets. If a "sector" in a small Venezuelan city has three businesses, publishing sector-level data effectively reveals individual business performance. The rule: aggregation must be sufficient to prevent individual identification. When in doubt, aggregate more.
+Privacy. Individual-level data is never published, even if it is technically accessible. Aggregate spending in a neighborhood is public; a specific family's transactions are not. This is not a difficult call in most cases, but it becomes harder in small markets. If a "sector" in a small city has three businesses, publishing sector-level data effectively reveals individual business performance. The rule: aggregation must be sufficient to prevent individual identification. When in doubt, aggregate more.
 
 Also: security-sensitive operational details. The specific IP addresses of scraping infrastructure, API keys, and server configurations are not public. The methodology is open; the operational security of the infrastructure is not.
 
 ---
 
-## Principle 3: Mobile First, Spanish First
+## Principle 3: Mobile First, Local Language First
 
-**Designed for Venezuelan and Colombian users, on the devices they actually have, in the language they actually speak.**
+**Designed for users in the implementation country, on the devices they actually have, in the language they actually speak.**
 
 ### Why it matters
 
 This principle sounds like a UX guideline. It is actually a statement about who econOS is for.
 
-Most Venezuelans and Colombians access the internet through smartphones -- often mid-range or budget Android devices on mobile data connections that are neither fast nor reliable. In Venezuela specifically, fixed broadband infrastructure has degraded significantly since the crisis. Mobile is not one channel among many. It is THE channel.
+In most developing countries, the majority of people access the internet through smartphones -- often mid-range or budget Android devices on mobile data connections that are neither fast nor reliable. In countries that have experienced economic crisis, fixed broadband infrastructure may have degraded significantly. Mobile is not one channel among many. It is THE channel.
 
-Spanish is not a localization afterthought. It is the primary language of the primary users. Every piece of text, every label, every methodology explanation, every error message is written first in Spanish, then translated to English for the international audience. This inversion matters because it determines what gets attention. When Spanish is the translation target, it gets less care -- awkward phrasing, untranslated technical terms, culturally mismatched metaphors. When Spanish is the source, it reads naturally to the people who need it most.
+The local language is not a localization afterthought. It is the primary language of the primary users. Every piece of text, every label, every methodology explanation, every error message is written first in the local language, then translated to English for the international audience. This inversion matters because it determines what gets attention. When the local language is the translation target, it gets less care -- awkward phrasing, untranslated technical terms, culturally mismatched metaphors. When it is the source, it reads naturally to the people who need it most.
 
-The combination -- mobile first AND Spanish first -- is a commitment to designing for a Venezuelan worker checking prices on a bus, not for a researcher at a university with a widescreen monitor and fluent English. Both will use econOS. But the Venezuelan worker is the design target. If the experience is good for them, it will be good for everyone. The reverse is not true.
+The combination -- mobile first AND local language first -- is a commitment to designing for a worker in a developing country checking prices on a bus, not for a researcher at a university with a widescreen monitor and fluent English. Both will use econOS. But the worker is the design target. If the experience is good for them, it will be good for everyone. The reverse is not true.
 
 ### What it means in practice
 
 - Page weight under 500KB. No heavy JavaScript frameworks that assume broadband. No high-resolution images that assume unlimited data. Every byte costs money on a metered mobile plan.
 - Load time under 3 seconds on a 3G connection. This is a hard constraint, not a goal. If a feature makes the page slow, the feature is redesigned or cut.
 - Touch targets sized for thumbs, not cursors. Layouts that work on a 5-inch screen. No hover states that assume a mouse.
-- Offline capability where possible. Cache the last-known data so the dashboard is useful even when connectivity drops. In Venezuela, connectivity drops.
-- All primary content in Spanish. Technical methodology documentation may exist in English first (because much of the academic literature is in English), but user-facing content is Spanish-native.
-- Venezuelan and Colombian Spanish, not Castilian. "Chamba" is a word. "Tasa" means exchange rate colloquially. The language matches how the users actually talk about money, work, and prices.
-- Currency display handles the dual-currency reality. In Venezuela, some prices are in bolivares, some in dollars, some in both. The interface doesn't force a single denomination -- it reflects how people actually transact.
+- Offline capability where possible. Cache the last-known data so the dashboard is useful even when connectivity drops. In many developing countries, connectivity drops frequently.
+- All primary content in the local language. Technical methodology documentation may exist in English first (because much of the academic literature is in English), but user-facing content is local-language-native.
+- Use the colloquial language of the implementation country, not formal or academic variants. The language matches how users actually talk about money, work, and prices.
+- Currency display handles multi-currency realities. In many developing economies, some prices are in local currency, some in dollars, some in both. The interface doesn't force a single denomination -- it reflects how people actually transact.
 
 ### The tradeoff it resolves
 
 **Accessibility vs. feature richness.** A desktop BI dashboard can have hover tooltips, multi-panel layouts, interactive filters, drill-down menus, and real-time streaming updates. A mobile-first dashboard cannot. The resolution: if it doesn't work on mobile, it doesn't ship as a primary feature. Desktop enhancements can exist, but the mobile experience is the canonical one. This means simpler interfaces, fewer panels per view, more scrolling and less clicking, larger text, and more aggressive data summarization.
 
-**Spanish-first vs. contributor accessibility.** Most open-source contributors globally work in English. Code comments, commit messages, and technical documentation in Spanish raise the barrier for international contributors. The resolution: code and technical infrastructure are in English (the lingua franca of software development). User-facing content is in Spanish. Documentation that matters for contributors (architecture docs, contribution guides) is bilingual. Documentation that matters for users (methodology explanations, dashboard help text) is Spanish-first.
+**Local-language-first vs. contributor accessibility.** Most open-source contributors globally work in English. Code comments, commit messages, and technical documentation in the local language raise the barrier for international contributors. The resolution: code and technical infrastructure are in English (the lingua franca of software development). User-facing content is in the local language. Documentation that matters for contributors (architecture docs, contribution guides) is bilingual. Documentation that matters for users (methodology explanations, dashboard help text) is local-language-first.
 
 ### When to break it
 
-When the user is not a Venezuelan or Colombian individual. The API layer -- raw data access for researchers, developers, and institutions -- does not need to be mobile-first. It needs to be well-documented, standards-compliant, and reliable. Researchers accessing the API from a Python script don't need a mobile interface. The principle applies to the product layer (dashboards, BI views) that regular people use. The infrastructure layer follows standard software engineering conventions.
+When the user is not an individual in the implementation country. The API layer -- raw data access for researchers, developers, and institutions -- does not need to be mobile-first. It needs to be well-documented, standards-compliant, and reliable. Researchers accessing the API from a Python script don't need a mobile interface. The principle applies to the product layer (dashboards, BI views) that regular people use. The infrastructure layer follows standard software engineering conventions.
 
 Also: English-first is acceptable for content that serves the international development community, diaspora organizations, or academic collaborators, as long as the Spanish version exists and is not a degraded translation.
 
@@ -126,19 +126,19 @@ Also: English-first is acceptable for content that serves the international deve
 
 ### Why it matters
 
-The distinction between information infrastructure and advisory infrastructure is the most important architectural decision in econOS. Get it wrong and the project becomes either a paternalistic recommendation engine ("move to Bogota!") or a technocratic control system ("your optimal career is accounting"). Both paths lead to distrust, misuse, and eventual rejection.
+The distinction between information infrastructure and advisory infrastructure is the most important architectural decision in econOS. Get it wrong and the project becomes either a paternalistic recommendation engine ("move to the capital!") or a technocratic control system ("your optimal career is accounting"). Both paths lead to distrust, misuse, and eventual rejection.
 
-The thesis of econOS is Hayekian: knowledge is dispersed. No algorithm knows the full context of a Venezuelan nurse's decision about whether to emigrate. She knows her family situation, her risk tolerance, her connections in different cities, her non-economic preferences, her assessment of political trajectory. econOS knows wages, job postings, cost of living, and exchange rates. The combination of her contextual knowledge and econOS's structured data produces a better decision than either alone. But only if econOS presents its data and steps back.
+The thesis of econOS is Hayekian: knowledge is dispersed. No algorithm knows the full context of a nurse's decision about whether to emigrate. She knows her family situation, her risk tolerance, her connections in different cities, her non-economic preferences, her assessment of political trajectory. econOS knows wages, job postings, cost of living, and exchange rates. The combination of her contextual knowledge and econOS's structured data produces a better decision than either alone. But only if econOS presents its data and steps back.
 
-This principle also addresses the trust problem directly. In Venezuela, institutions that told people what to think -- about prices, about the economy, about opportunity -- were systematically wrong and systematically self-serving. "Trust us, the economy is fine" while hyperinflation destroyed savings. "Trust us, there are no shortages" while shelves were empty. econOS builds credibility by doing the opposite: here is what we measured, here is how we measured it, here is what we don't know. You decide what it means for you.
+This principle also addresses the trust problem directly. In countries with failed institutions, authorities that told people what to think -- about prices, about the economy, about opportunity -- were systematically wrong and systematically self-serving. "Trust us, the economy is fine" while hyperinflation destroyed savings. "Trust us, there are no shortages" while shelves were empty. econOS builds credibility by doing the opposite: here is what we measured, here is how we measured it, here is what we don't know. You decide what it means for you.
 
 ### What it means in practice
 
-- BI views present data, not recommendations. The labor market view shows wages, job postings, cost of living, and trends for different cities. It does NOT say "you should move to Bogota." The user combines this data with everything else they know and makes their own decision.
+- BI views present data, not recommendations. The labor market view shows wages, job postings, cost of living, and trends for different cities. It does NOT say "you should move to the capital." The user combines this data with everything else they know and makes their own decision.
 - No rankings that imply a single "best" option. Cities are not ranked from best to worst. Fields of study are not ranked from most to least promising. Instead: here are the dimensions that matter (wages, demand, cost of living, growth trajectory), here is where each option stands on each dimension, here are the tradeoffs. The user weights the dimensions according to their own priorities.
 - Methodology is always visible. Every composite metric shows its components, its weights, and its data sources. If econOS combines three signals into a "regional activity index," the user can see the three signals individually and decide whether the composite captures what matters to them.
-- Uncertainty is shown, not hidden. When the data is noisy, the confidence interval is wide, and the dashboard says so. "We estimate inflation between 6% and 12% this month" is honest. "Inflation is 9%" when you actually don't know is dishonest -- and it's exactly what the BCV did before going silent entirely.
-- Language is neutral. "Job postings in nursing increased 40% in Bogota this quarter" is translation. "Nursing is a great career move right now" is prescription. econOS uses the first form.
+- Uncertainty is shown, not hidden. When the data is noisy, the confidence interval is wide, and the dashboard says so. "We estimate inflation between 6% and 12% this month" is honest. "Inflation is 9%" when you actually don't know is dishonest -- and it's exactly what failed statistical agencies did before going silent entirely.
+- Language is neutral. "Job postings in nursing increased 40% in the capital this quarter" is translation. "Nursing is a great career move right now" is prescription. econOS uses the first form.
 
 ### The tradeoff it resolves
 
@@ -146,11 +146,11 @@ This principle also addresses the trust problem directly. In Venezuela, institut
 
 The resolution: be transparent about the translation choices. Show the methodology. Let users adjust parameters. Offer multiple views of the same data. And always provide access to the underlying data for users who want to do their own analysis. The BI layer is a lens that helps you see; it is not the only lens, and it never claims to be.
 
-**Translation vs. engagement.** Recommendations drive engagement. "Move to Bogota -- 3x more job postings in your field!" gets more clicks than a neutral data table. The resolution: econOS optimizes for decision quality, not engagement. If the neutral presentation is less viral, that's acceptable. The goal is not maximum traffic. The goal is better allocation decisions. A user who makes a well-informed decision based on a boring data table has been served better than one who makes a hasty decision based on an exciting recommendation.
+**Translation vs. engagement.** Recommendations drive engagement. "Move to the capital -- 3x more job postings in your field!" gets more clicks than a neutral data table. The resolution: econOS optimizes for decision quality, not engagement. If the neutral presentation is less viral, that's acceptable. The goal is not maximum traffic. The goal is better allocation decisions. A user who makes a well-informed decision based on a boring data table has been served better than one who makes a hasty decision based on an exciting recommendation.
 
 ### When to break it
 
-When the data is unambiguous and the stakes are high. If the exchange rate data shows a sudden, large divergence between the official rate and the market rate, it is appropriate to surface this prominently -- not as a recommendation, but as a factual alert: "The spread between the BCV rate and the Binance P2P rate widened to X% this week, the largest gap in Y months." This is still translation, not prescription, but it is active translation -- the system is drawing attention to something the user should probably notice.
+When the data is unambiguous and the stakes are high. If the exchange rate data shows a sudden, large divergence between the official rate and the market rate, it is appropriate to surface this prominently -- not as a recommendation, but as a factual alert: "The spread between the official rate and the parallel market rate widened to X% this week, the largest gap in Y months." This is still translation, not prescription, but it is active translation -- the system is drawing attention to something the user should probably notice.
 
 Also: tutorials and onboarding. When a new user arrives at the dashboard, some guidance on how to read the data -- what the exchange rate spread means, how to interpret a confidence interval, what a job posting trend indicates -- is educational, not prescriptive. The line is: explain what the data IS, not what the user should DO about it.
 
@@ -162,28 +162,28 @@ Also: tutorials and onboarding. When a new user arrives at the dashboard, some g
 
 ### Why it matters
 
-This principle exists because the alternative to imperfect data in Venezuela is not perfect data. It is no data.
+This principle exists because the alternative to imperfect data in countries with collapsed statistics is not perfect data. It is no data.
 
-The BCV did not stop publishing data and then some other institution stepped in with better data. The data just stopped. Inflation estimates during hyperinflation ranged from 100,000% to over 1,000,000% depending on methodology and time period -- and most Venezuelans had access to none of these estimates in real time. They experienced inflation as the daily reality of prices changing faster than they could track, with no authoritative source telling them what was happening at an aggregate level.
+When central banks and statistical agencies stop publishing, no other institution steps in with better data. The data just stops. Inflation estimates during hyperinflation can range wildly depending on methodology -- and most people have access to none of these estimates in real time. They experience inflation as the daily reality of prices changing faster than they can track, with no authoritative source telling them what is happening at an aggregate level.
 
 In this context, the academic instinct to wait for methodological rigor before publishing is not caution. It is complicity with the void. A price index based on web-scraped data from 500 products in three cities is not comprehensive. It misses the informal economy, rural areas, and services. But it is infinitely more useful than the nothing that currently exists. "Infinitely" is not hyperbole -- the current denominator is zero.
 
-The Billion Prices Project demonstrated this. When Alberto Cavallo and Roberto Rigobon started scraping online prices in Argentina and Venezuela, their methodology was imperfect. It over-represented goods sold online, under-represented services, and had limited geographic coverage. But it was the only independent, near-real-time price signal available. It was cited by the IMF, used by investors, and trusted by the public -- not because it was perfect, but because it was there.
+The Billion Prices Project demonstrated this. When Alberto Cavallo and Roberto Rigobon started scraping online prices in countries with unreliable statistics, their methodology was imperfect. It over-represented goods sold online, under-represented services, and had limited geographic coverage. But it was the only independent, near-real-time price signal available. It was cited by the IMF, used by investors, and trusted by the public -- not because it was perfect, but because it was there.
 
 ### What it means in practice
 
-- Ship the first version of any indicator as soon as it's minimally credible, not when it's comprehensive. A price tracker covering Caracas, Maracaibo, and Valencia is worth shipping even though it doesn't cover Barquisimeto, Ciudad Guayana, or San Cristobal yet.
+- Ship the first version of any indicator as soon as it's minimally credible, not when it's comprehensive. A price tracker covering three major cities is worth shipping even though it doesn't cover every secondary city yet.
 - Every published metric includes explicit statements of what it DOESN'T cover. "This price index covers approximately 500 products from online retailers in 3 major cities. It does not cover services, informal markets, or rural areas. Coverage is being expanded." This is not a disclaimer -- it is part of the data product.
 - Confidence indicators are mandatory. Every data point has a signal quality marker: is this based on multiple corroborating sources, a single source, or an extrapolation? The user decides whether the confidence level is sufficient for their decision.
 - Data freshness is displayed prominently. "Last updated: 3 hours ago" or "Data from: March 25, 2026." Stale data that looks current is worse than no data -- it creates false confidence.
-- Coverage gaps are mapped visually. If the labor market data covers Caracas and Bogota but not Barquisimeto, the dashboard shows this explicitly. The user knows what they're seeing and what they're not.
+- Coverage gaps are mapped visually. If the labor market data covers major cities but not secondary ones, the dashboard shows this explicitly. The user knows what they're seeing and what they're not.
 - New data sources are integrated incrementally. Don't wait to launch until you have satellite data, transaction data, job postings, AND prices all working. Launch with prices. Add exchange rates next week. Add job postings next month. Each addition makes the system more useful, and waiting for all of them means launching with none of them.
 
 ### The tradeoff it resolves
 
 **Speed vs. accuracy.** This is the central tension in any real-time data system. Official statistics are accurate (within methodology) but slow. Real-time web-scraped data is fast but noisy. econOS chooses speed with transparency -- publish fast, show the uncertainty, and improve the methodology continuously. The user gets to decide whether speed with known uncertainty is more useful to them than accuracy with a three-month lag. For most allocation decisions in a fast-moving economy, it is.
 
-**Completeness vs. usefulness.** A comprehensive economic dashboard covering every sector, every region, every indicator, every demographic is a beautiful vision and a recipe for never shipping anything. The resolution: start with the indicators that have the highest allocation impact (prices, exchange rate, jobs) in the locations with the highest need (Venezuela's major cities), and expand from there. Every version is incomplete. Every version is useful.
+**Completeness vs. usefulness.** A comprehensive economic dashboard covering every sector, every region, every indicator, every demographic is a beautiful vision and a recipe for never shipping anything. The resolution: start with the indicators that have the highest allocation impact (prices, exchange rate, jobs) in the locations with the highest need, and expand from there. Every version is incomplete. Every version is useful.
 
 ### When to break it
 
@@ -199,21 +199,21 @@ Also: when adding a data source would take only slightly more time but dramatica
 
 ### Why it matters
 
-econOS has no institutional authority. It is not the BCV. It is not DANE. It is not the IMF. It is an open-source project publishing economic data about countries where the official data is unreliable or absent. On what basis should anyone trust it?
+econOS has no institutional authority. It is not a central bank. It is not a national statistical agency. It is not the IMF. It is an open-source project publishing economic data about countries where the official data is unreliable or absent. On what basis should anyone trust it?
 
 The answer is: methodology. Every number econOS publishes is accompanied by a complete explanation of how it was produced. The data sources, the collection methods, the cleaning and normalization procedures, the aggregation algorithms, the weighting choices -- all of it is public. Any economist, data scientist, journalist, or curious citizen can trace a published number back to its inputs and evaluate whether the methodology is sound. This is how science works. It is how econOS works.
 
-This approach inverts the traditional model of statistical authority. The BCV's numbers were trusted (when they were trusted) because the BCV is the central bank -- an institution with legal authority and historical credibility. When the institution failed, the credibility collapsed. There was nothing underneath it. econOS builds credibility from the ground up: the methodology is sound, the data sources are documented, the outputs are reproducible, and anyone can verify this for themselves. The credibility doesn't depend on who econOS is. It depends on what econOS does and whether that work holds up to scrutiny.
+This approach inverts the traditional model of statistical authority. Official statistics were trusted because they came from institutions with legal authority and historical credibility. When those institutions failed, the credibility collapsed. There was nothing underneath it. econOS builds credibility from the ground up: the methodology is sound, the data sources are documented, the outputs are reproducible, and anyone can verify this for themselves. The credibility doesn't depend on who econOS is. It depends on what econOS does and whether that work holds up to scrutiny.
 
 In a country where official institutions weaponized data -- publishing politically convenient numbers, suppressing inconvenient ones, and eventually going silent altogether -- the only path to trust is radical transparency. Not "trust us, we're experts." Instead: "here's exactly what we did, here's every assumption, here's where we're uncertain, here's the raw data -- check our work."
 
 ### What it means in practice
 
-- Every composite metric is decomposable. If the dashboard shows "Economic Activity Index: +3.2% this month," the user can click through to see: this is composed of Pago Movil transaction growth (weighted 40%), nighttime light intensity change (weighted 30%), and job posting growth (weighted 30%). Each component links to its own data source and methodology page.
-- Weights are published and justified. Why 40/30/30 and not 33/33/33? The methodology page explains: Pago Movil volume has the highest correlation with DANE-reported GDP in Colombia (the validation benchmark), nighttime lights have the broadest geographic coverage, and job postings capture labor market dynamics that the other two miss. Users who disagree with the weights can see the underlying components and weight them differently.
+- Every composite metric is decomposable. If the dashboard shows "Economic Activity Index: +3.2% this month," the user can click through to see: this is composed of mobile payment transaction growth (weighted 40%), nighttime light intensity change (weighted 30%), and job posting growth (weighted 30%). Each component links to its own data source and methodology page.
+- Weights are published and justified. Why 40/30/30 and not 33/33/33? The methodology page explains: payment volume has the highest correlation with officially-reported GDP (the validation benchmark), nighttime lights have the broadest geographic coverage, and job postings capture labor market dynamics that the other two miss. Users who disagree with the weights can see the underlying components and weight them differently.
 - Version history of methodology changes is maintained. If the weighting changes from 40/30/30 to 50/25/25 based on new validation data, the change is documented with the rationale. Historical data is available under both the old and new methodology so users can assess the impact of the change.
 - Known limitations are stated prominently, not buried in footnotes. The dashboard doesn't just show a number -- it shows the number AND the uncertainty AND the coverage gaps. This is not a weakness. It is the core feature. An institution that says "we don't know" when it doesn't know is more credible than one that projects false certainty.
-- Third-party validation is actively sought. Where possible, econOS cross-validates against independent sources. In Colombia, DANE provides a benchmark: do econOS's real-time estimates converge to DANE's official numbers when the official numbers eventually arrive? If yes, this builds credibility. If not, the divergence is investigated and reported.
+- Third-party validation is actively sought. Where possible, econOS cross-validates against independent sources. In countries with functional statistical agencies, those agencies provide a benchmark: do econOS's real-time estimates converge to official numbers when the official numbers eventually arrive? If yes, this builds credibility. If not, the divergence is investigated and reported.
 
 ### The tradeoff it resolves
 
@@ -235,30 +235,30 @@ Also: when explaining methodology to a general audience, some simplification is 
 
 ### Why it matters
 
-Every data source econOS uses can disappear. MercadoLibre can change its website structure or block scrapers. Binance can exit the Venezuelan market or restrict API access. The BCV can stop publishing monetary data again. A government can pressure a mobile payment provider to stop sharing aggregate data. A satellite data provider can change pricing. None of these are hypothetical -- every one of them has a precedent.
+Every data source econOS uses can disappear. E-commerce platforms can change their website structure or block scrapers. P2P exchanges can exit a market or restrict API access. Central banks can stop publishing monetary data. A government can pressure a mobile payment provider to stop sharing aggregate data. A satellite data provider can change pricing. None of these are hypothetical -- every one of them has a precedent.
 
-Venezuela taught the world what single points of failure look like in economic data. The BCV was THE source for macroeconomic statistics. When it failed, there was no backup. The economy went dark. econOS cannot replicate this architecture. If any single data source is removed, the system must continue functioning -- perhaps with reduced precision, perhaps with wider confidence intervals, but functioning.
+History has shown what single points of failure look like in economic data. When a central bank is THE sole source for macroeconomic statistics and it fails, there is no backup. The economy goes dark. econOS cannot replicate this architecture. If any single data source is removed, the system must continue functioning -- perhaps with reduced precision, perhaps with wider confidence intervals, but functioning.
 
 This principle extends beyond data sources to infrastructure. If the project is hosted on a single cloud provider, that provider can be pressured or can fail. If the project depends on a single maintainer, that person can burn out or be threatened. If the project is legally domiciled in a single jurisdiction, it can be subjected to legal pressure. Redundancy is not about efficiency. It is about survival.
 
 ### What it means in practice
 
-- Every key indicator is built from at least two independent data sources. The real-time price index doesn't rely solely on MercadoLibre. It combines MercadoLibre, pharmacy chains, supermarket catalogs, delivery app menus, and Instagram business listings. If one source goes dark, the index degrades gracefully rather than collapsing.
+- Every key indicator is built from at least two independent data sources. The real-time price index doesn't rely solely on one e-commerce platform. It combines multiple retailers, pharmacy chains, supermarket catalogs, delivery app menus, and social media business listings. If one source goes dark, the index degrades gracefully rather than collapsing.
 - Data source health is monitored and reported. The dashboard includes a "data source status" indicator: which sources are active, which are degraded, which are offline. If the price index is running on three sources instead of five, the user sees this and can calibrate their confidence accordingly.
-- The exchange rate is tracked through multiple channels: Binance P2P, Monitor Dolar, DolarToday, and the BCV official rate. If Binance exits or restricts the Venezuelan market, alternatives exist.
+- The exchange rate is tracked through multiple channels: P2P platforms, market rate aggregators, and the official central bank rate. If one platform exits or restricts a market, alternatives exist.
 - Code and data are mirrored across platforms. Not just GitHub -- if GitHub restricts access (as it has for users in sanctioned countries), the project must be available elsewhere. GitLab, self-hosted instances, and downloadable archives provide redundancy.
-- The project can be maintained from anywhere. Contributors in Caracas, Bogota, Miami, Madrid, or Santiago can all participate. No physical presence in any specific location is required for the project to function. This is not just convenience -- it is political survival. A contributor who faces pressure in one jurisdiction can continue from another.
+- The project can be maintained from anywhere. Contributors across multiple countries and continents can all participate. No physical presence in any specific location is required for the project to function. This is not just convenience -- it is political survival. A contributor who faces pressure in one jurisdiction can continue from another.
 - Data pipelines are modular. Adding or removing a data source doesn't require rewriting the system. Each source has a defined interface, and the aggregation layer consumes whatever sources are available.
 
 ### The tradeoff it resolves
 
-**Redundancy vs. efficiency.** Maintaining five scrapers for price data when one would suffice is more expensive in engineering time and compute resources. The resolution: the cost of redundancy is small (a few extra scrapers, a few extra API integrations). The cost of dependence is catastrophic (the entire indicator goes dark when a single source fails). In any cost-benefit analysis where the downside of failure is "no data for the Venezuelan public," redundancy wins.
+**Redundancy vs. efficiency.** Maintaining five scrapers for price data when one would suffice is more expensive in engineering time and compute resources. The resolution: the cost of redundancy is small (a few extra scrapers, a few extra API integrations). The cost of dependence is catastrophic (the entire indicator goes dark when a single source fails). In any cost-benefit analysis where the downside of failure is "no data for the public," redundancy wins.
 
 **Redundancy vs. simplicity.** More data sources mean more complexity in the aggregation layer: reconciling conflicting signals, weighting sources by reliability, handling sources that update at different frequencies. The resolution: build the aggregation layer well once. The complexity is in the infrastructure, not in the user experience. The user sees one price index. The infrastructure maintains five inputs to that index. This complexity is justified and manageable.
 
 ### When to break it
 
-When a data source is genuinely unique and irreplaceable. If Pago Movil aggregate transaction data becomes available through a BCV partnership, there may be no alternative source for domestic digital payment volumes in Venezuela. The principle doesn't say "never use unique sources" -- it says "never DEPEND on them." Use the unique source, but don't build an indicator that collapses without it. Design the indicator so it can fall back to proxies (Binance P2P volumes, satellite data, electricity consumption) if the primary source disappears. The fallback will be worse, but it will exist.
+When a data source is genuinely unique and irreplaceable. If aggregate transaction data becomes available through a central bank partnership, there may be no alternative source for domestic digital payment volumes. The principle doesn't say "never use unique sources" -- it says "never DEPEND on them." Use the unique source, but don't build an indicator that collapses without it. Design the indicator so it can fall back to proxies (P2P exchange volumes, satellite data, electricity consumption) if the primary source disappears. The fallback will be worse, but it will exist.
 
 In the very early stages of the project, some indicators may launch with only one source because that's all that's available. This is acceptable as a starting condition, not as a permanent state. The roadmap should include a plan to add redundancy to every single-source indicator.
 
@@ -270,7 +270,7 @@ In the very early stages of the project, some indicators may launch with only on
 
 ### Why it matters
 
-econOS is not going to launch one day and fix Venezuela's information problem. The information problem is the accumulated result of decades of institutional failure, and it will be repaired by the accumulated result of sustained, incremental improvement. A price tracker that covers 500 products in 3 cities in month one, 800 products in 5 cities in month three, and 2,000 products in 10 cities in month twelve has more impact than a project that spends twelve months trying to launch with 2,000 products in 10 cities and ships nothing until then.
+econOS is not going to launch one day and fix a country's information problem. The information problem is the accumulated result of decades of institutional failure, and it will be repaired by the accumulated result of sustained, incremental improvement. A price tracker that covers 500 products in 3 cities in month one, 800 products in 5 cities in month three, and 2,000 products in 10 cities in month twelve has more impact than a project that spends twelve months trying to launch with 2,000 products in 10 cities and ships nothing until then.
 
 The compound logic applies at every level:
 
@@ -279,7 +279,7 @@ The compound logic applies at every level:
 - **Coverage compounds.** Each new data source, each new city, each new indicator adds marginal value. But the marginal value is multiplicative, not additive, because cross-validation improves reliability across all indicators. Adding satellite data doesn't just add satellite insights -- it validates the price data, which validates the activity data, which improves confidence in the labor market data.
 - **Community compounds.** Each contributor who improves a scraper, adds a data source, fixes a bug, or translates a methodology page makes the project more useful, which attracts more users, which attracts more contributors.
 
-Venezuela's recovery itself is a compound process. The economy doesn't jump from contraction to prosperity. It grows 2-3% this year, then 3-4% next year, then the growth compounds. econOS supports this by making each round of allocation decisions slightly better informed than the last. The cumulative effect of millions of marginally better decisions, compounding over years, is the difference between a recovery that stalls and one that accelerates.
+Economic recovery itself is a compound process. An economy doesn't jump from contraction to prosperity. It grows 2-3% this year, then 3-4% next year, then the growth compounds. econOS supports this by making each round of allocation decisions slightly better informed than the last. The cumulative effect of millions of marginally better decisions, compounding over years, is the difference between a recovery that stalls and one that accelerates.
 
 ### What it means in practice
 
@@ -309,12 +309,12 @@ Also: when an external opportunity requires a step change. If a major data provi
 
 ### Why it matters
 
-Traditional economic statistics were designed for governments and central banks making macro policy. GDP growth, unemployment rate, CPI -- these are useful for deciding interest rates and fiscal policy. They are much less useful for a Venezuelan worker deciding whether to move to Bogota, a student deciding what to study, or a family deciding what to do with a $200 remittance.
+Traditional economic statistics were designed for governments and central banks making macro policy. GDP growth, unemployment rate, CPI -- these are useful for deciding interest rates and fiscal policy. They are much less useful for a worker deciding whether to move to another city, a student deciding what to study, or a family deciding what to do with a $200 remittance.
 
 The gap between what is measured and what matters is vast:
 
-- **GDP** measures aggregate output. It tells you nothing about whether ordinary people's lives are improving. Venezuela's GDP could grow 5% while that growth accrues entirely to the oil sector and connected elites, leaving the majority no better off. What matters to people is purchasing power: what can I actually buy with my wages?
-- **Unemployment rate** counts people who are looking for work and not finding it. It says nothing about the quality of the work that people DO find. In Venezuela and Colombia, where 40-60% of employment is informal, the unemployment rate misses most of the labor market entirely. What matters to people is: can I find work that pays enough to live on? Is the work stable? Does it use my skills?
+- **GDP** measures aggregate output. It tells you nothing about whether ordinary people's lives are improving. A country's GDP could grow 5% while that growth accrues entirely to the extractive sector and connected elites, leaving the majority no better off. What matters to people is purchasing power: what can I actually buy with my wages?
+- **Unemployment rate** counts people who are looking for work and not finding it. It says nothing about the quality of the work that people DO find. In developing countries where 40-60% of employment is informal, the unemployment rate misses most of the labor market entirely. What matters to people is: can I find work that pays enough to live on? Is the work stable? Does it use my skills?
 - **CPI** measures a weighted average basket of goods. It says nothing about the prices of the specific things YOU buy. A family that spends 60% of income on food experiences food price inflation, not headline CPI. What matters to people is: what do the things I actually need cost this week?
 - **Foreign direct investment** measures capital inflows. It says nothing about whether that capital reaches the neighborhoods and sectors where ordinary people work. What matters to people is: are businesses opening near me? Is my neighborhood recovering?
 
@@ -322,11 +322,11 @@ econOS is not building macro statistics for policymakers. It is building decisio
 
 ### What it means in practice
 
-- Track real purchasing power, not just prices. "A kilo of chicken costs X bolivares" is useful. "Your average monthly salary buys Y kilos of chicken, compared to Z kilos six months ago" is much more useful, because it connects price data to the allocation question that actually matters: am I getting ahead or falling behind?
+- Track real purchasing power, not just prices. "A kilo of chicken costs X" is useful. "Your average monthly salary buys Y kilos of chicken, compared to Z kilos six months ago" is much more useful, because it connects price data to the allocation question that actually matters: am I getting ahead or falling behind?
 - Track job quality indicators, not just job counts. Number of job postings is a signal. But so is: what percentage of postings include salary information? What's the median posted salary relative to cost of living? What percentage of postings are for formal vs. informal positions? What percentage offer benefits? These are harder to measure but more relevant to the worker making a career decision.
-- Track geographic granularity that matches lived experience. National averages obscure the enormous regional variation in Venezuela and Colombia. Caracas and Maracaibo are different economies. Bogota and Cucuta are different economies. The data should be as local as the decisions people make.
+- Track geographic granularity that matches lived experience. National averages obscure the enormous regional variation in any country. The capital and a secondary city are different economies. A border town and the interior are different economies. The data should be as local as the decisions people make.
 - Track trends, not just levels. "Inflation is 8%" is less useful than "inflation was 12% three months ago and has fallen to 8%, with the decline driven by stable exchange rates and increased imports." People make allocation decisions based on trajectory, not snapshots.
-- Be willing to build indicators that don't have clean official analogs. If the most useful thing for a Venezuelan migrant is "real-time cost-of-living-adjusted wage comparison between Caracas and Bogota for nurses," build that, even though no statistical agency publishes it. The constraint is what people need, not what statistical agencies traditionally produce.
+- Be willing to build indicators that don't have clean official analogs. If the most useful thing for a migrant is "real-time cost-of-living-adjusted wage comparison between two cities for nurses," build that, even though no statistical agency publishes it. The constraint is what people need, not what statistical agencies traditionally produce.
 
 ### The tradeoff it resolves
 
@@ -336,7 +336,7 @@ econOS is not building macro statistics for policymakers. It is building decisio
 
 ### When to break it
 
-When traditional indicators serve as essential validation benchmarks. DANE's CPI in Colombia is a traditional indicator, and econOS needs to validate against it. The Colombian CPI is not the most relevant indicator for a Colombian worker, but it is the benchmark that establishes whether econOS's methodology is reliable. Measure it, validate against it, and then go beyond it. Traditional indicators are the stepping stones, not the destination.
+When traditional indicators serve as essential validation benchmarks. A national statistical agency's CPI is a traditional indicator, and econOS needs to validate against it. The official CPI is not the most relevant indicator for an individual worker, but it is the benchmark that establishes whether econOS's methodology is reliable. Measure it, validate against it, and then go beyond it. Traditional indicators are the stepping stones, not the destination.
 
 Also: when what people THINK matters and what ACTUALLY matters diverge. If users obsess over the dollar exchange rate but the economically important signal is the rate of dollarization in everyday transactions, econOS should track both -- the exchange rate because users want it, and the dollarization rate because it matters more for long-term allocation decisions. Serving what people ask for and providing what they need are both legitimate goals; they just occasionally require different indicators.
 
@@ -351,7 +351,7 @@ These nine principles form a coherent system. They reinforce each other in most 
 - Allocation-first and translate-don't-prescribe are natural partners. If the goal is better allocation, and allocation decisions belong to the individual, then the system's job is to provide the information and let the individual decide. Prescription would mean the system is allocating, not the person.
 - Open-by-default and transparency-over-authority are the same commitment applied at different levels. Openness is the structural principle (the code, data, and methodology are public). Transparency is the operational principle (every number shows its work).
 - Partial-is-better-than-nothing and compound-over-heroic are the temporal dimension of the same insight. Ship the partial thing now (Principle 5), and improve it continuously (Principle 8). Together they produce a system that starts useful and gets better.
-- Redundancy-over-dependence and open-by-default jointly address the Venezuela lesson. Openness prevents political capture. Redundancy prevents technical capture. Together they produce infrastructure that survives.
+- Redundancy-over-dependence and open-by-default jointly address the lesson of data blackouts. Openness prevents political capture. Redundancy prevents technical capture. Together they produce infrastructure that survives.
 - Mobile-first-Spanish-first and measure-what-matters-to-people are both expressions of the same commitment: design for the actual user in their actual context, not for an abstract ideal user.
 
 **The productive tensions:**
@@ -369,7 +369,7 @@ When making a design decision, run it against the principles:
 
 1. **Does this help someone allocate resources better?** If not, deprioritize it.
 2. **Is the output public?** If it can't be, justify why.
-3. **Does it work on a phone in Maracaibo?** If not, redesign it.
+3. **Does it work on a phone in a developing country?** If not, redesign it.
 4. **Does it show data without telling people what to do?** If it prescribes, pull back.
 5. **Is it shipping now, or waiting for perfection?** If waiting, consider shipping what exists.
 6. **Does it show its work?** If the methodology isn't visible, make it visible.

@@ -28,7 +28,7 @@ The development economics literature has quantified just how much misallocation 
 
 The implication is staggering: **a significant portion of the productivity gap between developing and developed countries is not about having fewer resources, but about allocating them worse.** And they allocate worse primarily because of information failures -- opaque markets, unreliable data, regulatory distortions, and credit frictions that prevent resources from flowing to their best use.
 
-**Restuccia and Rogerson (2008) -- "Policy Distortions and Aggregate Productivity with Heterogeneous Establishments"**: Demonstrated that policy distortions (subsidies to unproductive firms, barriers to productive ones) cause misallocation that can reduce aggregate output by a factor of 2 or more. In Venezuela, the distortions under price controls, currency controls, and expropriations were extreme -- and the information environment that might have enabled better allocation was simultaneously destroyed.
+**Restuccia and Rogerson (2008) -- "Policy Distortions and Aggregate Productivity with Heterogeneous Establishments"**: Demonstrated that policy distortions (subsidies to unproductive firms, barriers to productive ones) cause misallocation that can reduce aggregate output by a factor of 2 or more. In countries with severe price controls, currency controls, and expropriations, the distortions are extreme -- and the information environment that might have enabled better allocation is simultaneously destroyed.
 
 **Banerjee and Duflo (2005) -- "Growth Theory Through the Lens of Development Economics"**: Showed that credit market imperfections (a form of information failure) prevent capital from flowing to its highest-return uses, trapping economies in low-productivity equilibria. In countries where lenders can't assess borrower quality (because there's no data), capital either doesn't flow at all or flows to the wrong places.
 
@@ -54,35 +54,35 @@ Better information
 ```
 
 This chain operates at every scale:
-- **Individual**: A nurse deciding between Bogota and Lima. With data, she goes where the wage premium justifies the cost of living. Without data, she goes where her cousin went. The economy-wide result of millions of these decisions either compounds toward efficiency or toward waste.
+- **Individual**: A nurse deciding between two destination cities. With data, she goes where the wage premium justifies the cost of living. Without data, she goes where her cousin went. The economy-wide result of millions of these decisions either compounds toward efficiency or toward waste.
 - **Small business**: A bakery owner choosing a neighborhood. With data on foot traffic, spending patterns, and competition, they locate optimally. Without data, they guess. Half of small businesses fail in the first five years -- how much of that failure is information failure?
-- **Capital markets**: An investor allocating $1M to Venezuelan recovery. With real-time sectoral and regional data, they fund growing sectors in recovering regions. Without data, they either don't invest (capital stays away) or invest blindly (capital goes to the wrong place). Both outcomes are waste.
+- **Capital markets**: An investor allocating $1M to a developing country's recovery. With real-time sectoral and regional data, they fund growing sectors in recovering regions. Without data, they either don't invest (capital stays away) or invest blindly (capital goes to the wrong place). Both outcomes are waste.
 - **Human capital**: A student choosing a degree program. With demand data, they invest 4 years in a field the economy needs. Without data, they follow prestige signals or family tradition. The misallocation compounds over a 40-year career.
 - **Remittances**: A diaspora family sending $200/month home. With data on local conditions, they can advise the recipient on how to use it productively. Without data, it goes to consumption -- which keeps a family alive but doesn't build productive capacity.
 
 ---
 
-## The Venezuela Case: Extreme Misallocation
+## The Developing-Country Case: Extreme Misallocation
 
-Venezuela is one of the most extreme cases of economic misallocation in modern history, and the information environment was both a cause and a casualty.
+Some of the most extreme cases of economic misallocation in modern history share the same pattern: the information environment was both a cause and a casualty of collapse.
 
-### What Happened
+### What Happens When the Information Layer Breaks
 
-From 2013 to 2020, Venezuela experienced an estimated **75% GDP contraction** -- worse than the Great Depression, comparable only to war-torn economies. The causes included oil price collapse, expropriations, price controls, currency controls, and institutional destruction. But underlying all of these was a catastrophic information failure:
+Countries that experience severe economic crisis often see GDP contractions of 50-75% -- worse than the Great Depression, comparable only to war-torn economies. The causes vary (commodity price collapse, expropriations, hyperinflation, sanctions, conflict), but underlying all of them is a catastrophic information failure:
 
-- **Price controls** destroyed the price system's ability to signal scarcity. When the government mandates that milk costs X bolivares, the price no longer tells you anything about supply and demand. Producers can't respond to signals. Consumers can't make informed tradeoffs. The result was shortages, black markets, and massive waste.
+- **Price controls** destroy the price system's ability to signal scarcity. When the government mandates that basic goods cost a fixed amount in local currency, the price no longer tells you anything about supply and demand. Producers can't respond to signals. Consumers can't make informed tradeoffs. The result is shortages, black markets, and massive waste.
 
-- **Currency controls** destroyed the exchange rate's ability to signal the economy's real external position. Multiple simultaneous exchange rates (official, SICAD, SIMADI, black market) meant nobody knew the real price of imports, exports, or foreign investment. Capital fled or froze.
+- **Currency controls** destroy the exchange rate's ability to signal the economy's real external position. Multiple simultaneous exchange rates (official, preferential, parallel, black market) mean nobody knows the real price of imports, exports, or foreign investment. Capital flees or freezes.
 
-- **Expropriation risk** destroyed the ability to assess investment returns. When the government can seize your factory, no amount of demand data justifies investment. Information about the economy became irrelevant because the rules of the economy were unpredictable.
+- **Expropriation risk** destroys the ability to assess investment returns. When the government can seize your factory, no amount of demand data justifies investment. Information about the economy becomes irrelevant because the rules of the economy are unpredictable.
 
-- **Statistical agency collapse** destroyed the ability to measure any of this. The BCV stopped publishing data. The INE became unreliable. Decision-makers -- individuals, businesses, policymakers, international organizations -- were operating blind.
+- **Statistical agency collapse** destroys the ability to measure any of this. Central banks stop publishing data. National statistics offices become unreliable. Decision-makers -- individuals, businesses, policymakers, international organizations -- operate blind.
 
-The information destruction was not incidental to the economic collapse. It was central to it. **When the information layer of the economy breaks, the allocation layer breaks, and the production layer follows.**
+The information destruction is not incidental to economic collapse. It is central to it. **When the information layer of the economy breaks, the allocation layer breaks, and the production layer follows.**
 
-### The Recovery: Why Allocation Quality Is Existential
+### Recovery: Why Allocation Quality Is Existential
 
-Venezuela's recovery is now underway, unevenly and tentatively. But recovery capital is **scarce**. The country has lost 75% of its GDP, 25% of its population, and most of its institutional capacity. Every dollar of investment, every returning worker, every new business, every remittance dollar matters more than it would in a healthy economy -- because there's so little to work with.
+When a crisis economy begins to recover, recovery capital is **scarce**. The country may have lost the majority of its GDP, a significant share of its population to emigration, and most of its institutional capacity. Every dollar of investment, every returning worker, every new business, every remittance dollar matters more than it would in a healthy economy -- because there's so little to work with.
 
 In a capital-scarce recovery, misallocation isn't just inefficient -- it's devastating:
 
@@ -91,9 +91,9 @@ In a capital-scarce recovery, misallocation isn't just inefficient -- it's devas
 - **A business opened in a saturated market** fails, destroying the owner's savings and the lender's capital
 - **Investment that stays away because of uncertainty** is capital that could be building productive capacity but isn't, because there's no information to reduce the risk
 
-**The marginal value of information is highest when resources are scarcest.** A billionaire who misallocates 5% of their portfolio loses some return. A Venezuelan family that invests their savings in the wrong small business loses everything. An economy that directs its thin recovery capital to the wrong sectors loses years of growth.
+**The marginal value of information is highest when resources are scarcest.** A billionaire who misallocates 5% of their portfolio loses some return. A family in a crisis economy that invests their savings in the wrong small business loses everything. An economy that directs its thin recovery capital to the wrong sectors loses years of growth.
 
-This is why econOS is not a "nice to have" for Venezuela. It is essential infrastructure for recovery. Better allocation of scarce recovery resources -- capital, labor, skills, time, remittances -- directly translates into faster and more resilient economic recovery.
+This is why econOS is not a "nice to have" for developing and recovering economies. It is essential infrastructure for recovery. Better allocation of scarce recovery resources -- capital, labor, skills, time, remittances -- directly translates into faster and more resilient economic recovery.
 
 ---
 
@@ -104,7 +104,7 @@ How much does better information actually improve allocation? The literature pro
 ### Misallocation Costs (Macro)
 
 - Hsieh and Klenow estimate **30-60% TFP gains** from eliminating misallocation in developing countries. Even a 10% reduction in misallocation through better information would be transformative.
-- For Venezuela's ~$100B economy, a 10% productivity improvement is **$10B in additional annual output** -- more than the entire annual remittance flow.
+- For a developing economy of ~$100B, a 10% productivity improvement is **$10B in additional annual output** -- potentially more than the entire annual remittance flow.
 
 ### Information and Investment Returns (Micro)
 
@@ -131,7 +131,7 @@ Better economic data reduces all three problems. A lender who can see real-time 
 
 ### Phase 1: Making the Economy Legible
 
-The immediate goal is to make the Venezuelan and Colombian economies **visible** in real time. This alone improves allocation:
+The immediate goal is to make developing economies **visible** in real time. This alone improves allocation:
 
 - **Price transparency** reduces search costs and arbitrage waste
 - **Labor market visibility** improves job matching and reduces frictional unemployment
@@ -155,10 +155,10 @@ Each of these views is a decision-support tool that helps individuals allocate t
 
 Better allocation compounds. A worker in a better-matched job is more productive. A more productive worker earns more. Higher earnings fund more investment. Better-informed investment generates higher returns. Higher returns attract more capital. More capital funds more productive uses. Each round of the cycle is slightly more efficient because the information environment is slightly better.
 
-In a recovering economy, this compound effect is the difference between a recovery that stalls and one that accelerates. Venezuela's recovery trajectory -- 5 years, 10 years, 20 years -- depends significantly on how well the thin stream of recovery capital is allocated. econOS is designed to make that allocation as productive as possible.
+In a recovering economy, this compound effect is the difference between a recovery that stalls and one that accelerates. A country's recovery trajectory -- 5 years, 10 years, 20 years -- depends significantly on how well the thin stream of recovery capital is allocated. econOS is designed to make that allocation as productive as possible.
 
 ---
 
 ## The One-Paragraph Summary
 
-Every economic decision -- where to invest, where to work, what to produce, what to study, where to move -- is a resource allocation problem. The quality of these decisions depends on the quality of available information. In Venezuela, the information layer of the economy collapsed alongside everything else, making already-scarce recovery resources vulnerable to misallocation. econOS rebuilds that information layer as open-source infrastructure, giving every economic agent -- worker, student, business owner, investor, diaspora family -- the data they need to allocate their resources more productively. The cumulative effect of millions of better-informed decisions is the difference between a slow, wasteful recovery and a fast, efficient one. **econOS doesn't allocate resources. It makes the people who do allocate them smarter about it.**
+Every economic decision -- where to invest, where to work, what to produce, what to study, where to move -- is a resource allocation problem. The quality of these decisions depends on the quality of available information. In developing and crisis economies, the information layer of the economy collapses alongside everything else, making already-scarce recovery resources vulnerable to misallocation. econOS rebuilds that information layer as open-source infrastructure, giving every economic agent -- worker, student, business owner, investor, diaspora family -- the data they need to allocate their resources more productively. The cumulative effect of millions of better-informed decisions is the difference between a slow, wasteful recovery and a fast, efficient one. **econOS doesn't allocate resources. It makes the people who do allocate them smarter about it.**

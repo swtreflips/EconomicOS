@@ -1,6 +1,6 @@
 # How GDP Is Measured Today
 
-## A Working Research Document for econOS -- Venezuela and Colombia Focus
+## A Working Research Document for econOS
 
 ---
 
@@ -22,64 +22,64 @@ GDP measured as the sum of all incomes earned in production -- compensation of e
 
 **Value-Added (Production) Approach:**
 
-GDP as the sum of value added at each stage of production across all industries. This is the primary approach used by most Latin American statistical agencies, including Venezuela's BCV and Colombia's DANE.
+GDP as the sum of value added at each stage of production across all industries. This is the primary approach used by most developing country statistical agencies.
 
-In theory, all three approaches yield identical results. In practice, the gap between them -- the statistical discrepancy -- reveals the quality of a country's measurement infrastructure. In the US, this gap is typically 1-2 percentage points. In Venezuela, the gap is unknowable because the data to calculate it has not been consistently published.
+In theory, all three approaches yield identical results. In practice, the gap between them -- the statistical discrepancy -- reveals the quality of a country's measurement infrastructure. In the US, this gap is typically 1-2 percentage points. In crisis economies, the gap is unknowable because the data to calculate it has not been consistently published.
 
 ### 1.2 What GDP Misses -- The Developing Country Problem
 
 GDP's blind spots exist everywhere, but their magnitude is categorically different in developing economies:
 
-- **Informal economy:** In the US, the underground economy is estimated at 5-12% of GDP. In Venezuela, estimates of informal economic activity range from 40% to over 60% of total activity. In Colombia, the informal sector accounts for an estimated 35-50% of employment and a corresponding share of output. GDP figures that miss half the economy are not approximations -- they are fictions.
+- **Informal economy:** In the US, the underground economy is estimated at 5-12% of GDP. In crisis economies, estimates of informal economic activity range from 40% to over 60% of total activity. In middle-income developing countries, the informal sector accounts for an estimated 35-50% of employment and a corresponding share of output. GDP figures that miss half the economy are not approximations -- they are fictions.
 
-- **Household production and subsistence:** In a country experiencing economic collapse, households shift massively toward self-provisioning, barter, and informal exchange. None of this appears in GDP. During Venezuela's crisis, millions of people grew food in urban gardens, traded goods across the Colombian border in unrecorded transactions, and relied on remittances processed through informal channels. GDP measured none of it.
+- **Household production and subsistence:** In a country experiencing economic collapse, households shift massively toward self-provisioning, barter, and informal exchange. None of this appears in GDP. During severe economic crises, millions of people grow food in urban gardens, trade goods across borders in unrecorded transactions, and rely on remittances processed through informal channels. GDP measures none of it.
 
-- **Currency distortion:** GDP is denominated in local currency and converted to real terms using price deflators. When a country has multiple exchange rates, hyperinflation, and widespread dollarization, the denominator of GDP becomes meaningless. Venezuela had official exchange rates that diverged from black market rates by factors of 100x or more. Which rate do you use to calculate GDP? The answer changes the number by orders of magnitude.
+- **Currency distortion:** GDP is denominated in local currency and converted to real terms using price deflators. When a country has multiple exchange rates, hyperinflation, and widespread dollarization, the denominator of GDP becomes meaningless. Crisis economies have had official exchange rates that diverged from black market rates by factors of 100x or more. Which rate do you use to calculate GDP? The answer changes the number by orders of magnitude.
 
 - **Quality collapse:** GDP counts production at market value, but when the quality of goods and services collapses -- hospitals without medicine, universities without professors, factories without parts -- nominal output can remain stable or even rise (due to inflation) while real welfare plummets.
 
-- **Emigration:** Between 2014 and 2023, an estimated 7.7 million Venezuelans left the country (UNHCR figures), roughly 25% of the population. GDP measures production within borders, not the capacity of the population. A country that loses a quarter of its people and a disproportionate share of its skilled workforce has suffered an economic catastrophe that GDP only partially captures.
+- **Emigration:** In severe crises, mass emigration can remove 20-25% or more of a country's population within a decade (as documented by UNHCR in multiple crisis economies). GDP measures production within borders, not the capacity of the population. A country that loses a quarter of its people and a disproportionate share of its skilled workforce has suffered an economic catastrophe that GDP only partially captures.
 
 The gap between what GDP measures and what actually matters is not a footnote in developing countries. It is the central measurement problem.
 
 ---
 
-## 2. How GDP Is Measured in Venezuela
+## 2. How GDP Is Measured in Crisis Economies
 
-### 2.1 The Institution: Banco Central de Venezuela (BCV)
+### 2.1 The Institution: The Central Bank as Statistical Agency
 
-Venezuela's GDP is officially produced by the Banco Central de Venezuela, the country's central bank. Unlike the US system where GDP compilation sits in a separate statistical agency (the BEA), Venezuela concentrates monetary policy and national accounts in the same institution. This creates an inherent conflict of interest: the institution responsible for monetary policy also produces the data against which that policy is judged.
+In many crisis economies, GDP is officially produced by the central bank rather than a separate statistical agency. Unlike the US system where GDP compilation sits in a separate statistical agency (the BEA), this arrangement concentrates monetary policy and national accounts in the same institution. This creates an inherent conflict of interest: the institution responsible for monetary policy also produces the data against which that policy is judged.
 
-The BCV's national accounts department historically followed SNA guidelines and published quarterly and annual GDP estimates disaggregated by economic sector (petroleum, manufacturing, construction, commerce, government, etc.). The base year for constant-price calculations was updated periodically -- the last widely used base year was 1997, with an update to 2007 that was never fully transparent in its methodology.
+Central banks in crisis economies have historically followed SNA guidelines and published quarterly and annual GDP estimates disaggregated by economic sector (petroleum, manufacturing, construction, commerce, government, etc.). The base year for constant-price calculations is updated periodically -- but methodology updates are often not fully transparent.
 
 ### 2.2 Data Sources
 
-The BCV's GDP estimates historically relied on:
+Central bank GDP estimates in crisis economies have historically relied on:
 
-- **PDVSA and Ministry of Petroleum data** for the oil sector (production volumes, export values, domestic refining)
+- **State oil company and ministry of petroleum data** for the oil sector (production volumes, export values, domestic refining)
 - **Administrative records** from government ministries (agriculture, manufacturing, construction permits)
-- **Tax data** from SENIAT (Servicio Nacional Integrado de Administracion Aduanera y Tributaria), the national tax authority
+- **Tax data** from the national tax authority
 - **Surveys** of industrial establishments, commercial enterprises, and service providers
-- **Balance of payments data** compiled by the BCV itself
-- **Price indexes** from the BCV and the Instituto Nacional de Estadistica (INE)
+- **Balance of payments data** compiled by the central bank itself
+- **Price indexes** from the central bank and the national statistics office
 
-The quality of these sources degraded severely over the crisis period. PDVSA's financial reporting became opaque after 2014. SENIAT data became less meaningful as the formal economy contracted and tax compliance collapsed. Survey response rates are unknown but presumed to have fallen dramatically as businesses closed or moved underground. The INE, which produced the consumer price index, stopped publishing inflation data for extended periods.
+The quality of these sources degrades severely during crisis periods. State oil companies' financial reporting becomes opaque. Tax authority data becomes less meaningful as the formal economy contracts and tax compliance collapses. Survey response rates fall dramatically as businesses close or move underground. The national statistics office, which produces the consumer price index, may stop publishing inflation data for extended periods.
 
 ### 2.3 The Years of Silence
 
-This is the critical fact for econOS: **the BCV stopped publishing GDP data for extended periods during Venezuela's economic crisis.**
+This is the critical fact for econOS: **central banks in crisis economies have stopped publishing GDP data for extended periods.**
 
-The timeline of data blackouts:
+A representative timeline of data blackouts:
 
-- **2004-2014:** BCV published GDP data with reasonable regularity, though methodology questions persisted. During this period, high oil prices supported reported GDP growth, and the government had political incentive to publish.
+- **Pre-crisis period:** The central bank publishes GDP data with reasonable regularity, though methodology questions persist. During periods of high commodity prices, reported GDP growth is supported and the government has political incentive to publish.
 
-- **2014-2015:** Oil prices collapsed. GDP began contracting. Publication of quarterly data became irregular. The BCV delayed releases by months, then quarters.
+- **Early crisis:** Commodity prices collapse. GDP begins contracting. Publication of quarterly data becomes irregular. The central bank delays releases by months, then quarters.
 
-- **2016-2018:** The BCV effectively went dark on macroeconomic statistics. GDP figures for 2016, 2017, and 2018 were either not published at all or released years after the fact with minimal methodological documentation. Inflation data similarly disappeared. The National Assembly (opposition-controlled) began producing its own inflation estimates, and international organizations resorted to estimates based on proxy indicators.
+- **Deep crisis:** The central bank effectively goes dark on macroeconomic statistics. GDP figures are either not published at all or released years after the fact with minimal methodological documentation. Inflation data similarly disappears. Opposition bodies begin producing their own inflation estimates, and international organizations resort to estimates based on proxy indicators.
 
-- **2019-2020:** The BCV released some retroactive figures under political pressure, but the methodology behind them was not documented and the numbers were widely questioned by economists inside and outside Venezuela. The IMF flagged Venezuela for inadequate provision of economic data under Article VIII obligations.
+- **Partial recovery:** The central bank releases some retroactive figures under political pressure, but the methodology behind them is not documented and the numbers are widely questioned by economists domestically and internationally. The IMF flags the country for inadequate provision of economic data under Article VIII obligations.
 
-- **2021-present:** Some data publication has resumed, but with significant gaps, questionable methodology, and continued political sensitivity. The BCV published figures suggesting GDP growth in 2021-2022, but independent estimates (from Torino Capital, Ecoanalitica, and academic economists) often diverge substantially from official numbers.
+- **Post-crisis:** Some data publication resumes, but with significant gaps, questionable methodology, and continued political sensitivity. The central bank publishes figures suggesting GDP growth, but independent estimates (from investment banks, independent economic consultancies, and academic economists) often diverge substantially from official numbers.
 
 ### 2.4 Credibility and Political Manipulation
 
@@ -87,106 +87,106 @@ The credibility problem is not merely about gaps in publication. It is about whe
 
 Specific credibility concerns:
 
-- **Base year manipulation:** The BCV's shift from a 1997 base year to a 2007 base year changed the weighting of sectors in ways that some economists argued systematically favored the government's narrative. The oil sector's weight in GDP was reduced at a time when oil sector performance was declining relative to other sectors.
+- **Base year manipulation:** Shifts in base year can change the weighting of sectors in ways that systematically favor the government's narrative. The oil sector's weight in GDP may be reduced at a time when oil sector performance is declining relative to other sectors.
 
-- **Deflator selection:** In an environment of hyperinflation, the choice of price deflator determines the real GDP figure. The BCV's price indexes were themselves subject to credibility questions. Between 2016 and 2019, when the BCV was not publishing its own inflation data, there was no official deflator to convert nominal to real GDP.
+- **Deflator selection:** In an environment of hyperinflation, the choice of price deflator determines the real GDP figure. The central bank's price indexes are themselves subject to credibility questions. When the central bank is not publishing its own inflation data, there is no official deflator to convert nominal to real GDP.
 
-- **Oil sector accounting:** Venezuela's oil sector historically represented 20-30% of GDP directly and a far larger share when indirect effects are included. PDVSA's production figures were disputed -- the government's reported figures consistently exceeded independent estimates from OPEC secondary sources, the IEA, and satellite-based monitoring. If oil production data is wrong, GDP is wrong.
+- **Oil sector accounting:** In oil-dependent crisis economies, the oil sector may historically represent 20-30% of GDP directly and a far larger share when indirect effects are included. State oil company production figures are often disputed -- government-reported figures consistently exceed independent estimates from OPEC secondary sources, the IEA, and satellite-based monitoring. If oil production data is wrong, GDP is wrong.
 
-- **Exchange rate treatment:** With official, DIPRO, DICOM, and black market exchange rates diverging by enormous factors, the treatment of imports, exports, and foreign-currency-denominated transactions in GDP was essentially arbitrary.
+- **Exchange rate treatment:** With multiple official and black market exchange rates diverging by enormous factors, the treatment of imports, exports, and foreign-currency-denominated transactions in GDP becomes essentially arbitrary.
 
-- **Political pressure:** Multiple former BCV officials have publicly stated that the institution lost operational independence. The central bank's board was restructured to include government loyalists, and publication decisions were subject to political approval.
+- **Political pressure:** Former central bank officials in multiple crisis economies have publicly stated that their institutions lost operational independence. Central bank boards are restructured to include government loyalists, and publication decisions become subject to political approval.
 
-### 2.5 The Scale of the Economic Collapse
+### 2.5 The Scale of Economic Collapse
 
-Precisely because official data is unreliable, the scale of Venezuela's economic contraction has been estimated by multiple independent sources using different methodologies. The estimates converge on a catastrophe:
+Precisely because official data is unreliable, the scale of economic contraction in crisis economies has been estimated by multiple independent sources using different methodologies. In the worst cases, the estimates converge on catastrophe:
 
-- **IMF estimates:** GDP declined by approximately 75% between 2013 and 2020, the largest peacetime economic contraction in modern Latin American history.
-- **Torino Capital:** Estimated cumulative GDP decline of approximately 70% from peak to trough.
-- **Ecoanalitica (Venezuelan consultancy):** Produced alternative GDP estimates using survey data, proxy indicators, and satellite imagery, generally consistent with the 70-75% decline range.
-- **World Bank:** Classified Venezuela's contraction as worse than the US Great Depression (which saw roughly a 30% peak-to-trough decline) and comparable to conflict-zone economies.
+- **IMF estimates:** GDP declines of 70-75% from peak to trough have been documented -- the largest peacetime economic contractions in modern history.
+- **Independent investment banks:** Estimated cumulative GDP declines in the same range using alternative methodologies.
+- **Independent economic consultancies:** Produced alternative GDP estimates using survey data, proxy indicators, and satellite imagery, generally consistent with the 70-75% decline range.
+- **World Bank:** Has classified the worst of these contractions as worse than the US Great Depression (which saw roughly a 30% peak-to-trough decline) and comparable to conflict-zone economies.
 
-For context: a 75% GDP decline means the economy in 2020 was producing roughly one quarter of what it produced in 2013. The US Great Depression, the standard reference for catastrophic economic contraction in developed countries, was approximately 30% peak-to-trough. Venezuela's collapse was 2.5 times worse by this measure.
+For context: a 75% GDP decline means the economy is producing roughly one quarter of what it produced at its peak. The US Great Depression, the standard reference for catastrophic economic contraction in developed countries, was approximately 30% peak-to-trough. The worst developing-country collapses have been 2.5 times worse by this measure.
 
 ### 2.6 Currency Chaos
 
-Venezuela's currency situation makes GDP measurement in local currency essentially meaningless without extensive context:
+In crisis economies, the currency situation makes GDP measurement in local currency essentially meaningless without extensive context:
 
-- **Redenominations:** The bolivar has been redenominated three times. The bolivar fuerte replaced the bolivar in 2008 (removing three zeros). The bolivar soberano replaced the bolivar fuerte in 2018 (removing five zeros). The bolivar digital replaced the bolivar soberano in 2021 (removing six zeros). In total, fourteen zeros have been removed. A price of 1 bolivar digital in 2021 is equivalent to 100,000,000,000,000 original bolivares.
+- **Redenominations:** Some crisis economies have redenominated their currency multiple times, removing as many as fourteen zeros over a period of years. Time-series comparison becomes extremely difficult when the unit of account keeps changing.
 
-- **Multiple exchange rates:** For most of the crisis period, Venezuela operated with multiple official exchange rates (at various points called CADIVI, CENCOEX, SICAD I, SICAD II, DIPRO, DICOM) alongside a black market rate. The divergence was extreme -- at its peak, the black market rate exceeded the official rate by a factor of more than 100. Any GDP calculation denominated in bolivares at the official rate was fiction.
+- **Multiple exchange rates:** Crisis economies often operate with multiple official exchange rates alongside a black market rate. The divergence can be extreme -- at its peak, the black market rate may exceed the official rate by a factor of more than 100. Any GDP calculation denominated in local currency at the official rate is fiction.
 
-- **Dollarization:** By 2019-2020, the Venezuelan economy had substantially dollarized from the ground up. The Maduro government, after years of criminalizing dollar transactions, effectively legalized dollar use. Estimates suggest 60-70% of transactions in major cities are now conducted in US dollars. This means a significant share of Venezuelan economic activity is denominated in a currency the BCV does not control and may not fully track.
+- **Dollarization:** When a crisis economy substantially dollarizes from the ground up, 60-70% of transactions in major cities may be conducted in US dollars. This means a significant share of economic activity is denominated in a currency the central bank does not control and may not fully track.
 
-- **Crypto adoption:** Venezuela also saw significant cryptocurrency adoption, particularly in border regions and among the diaspora for remittances. These transactions are invisible to traditional GDP measurement.
+- **Crypto adoption:** Crisis economies also see significant cryptocurrency adoption, particularly in border regions and among the diaspora for remittances. These transactions are invisible to traditional GDP measurement.
 
 ---
 
-## 3. How GDP Is Measured in Colombia
+## 3. How GDP Is Measured in Middle-Income Developing Countries
 
-### 3.1 The Institution: DANE
+### 3.1 The Institution: Independent Statistical Agencies
 
-Colombia's GDP is produced by the Departamento Administrativo Nacional de Estadistica (DANE), the national statistical office. Unlike Venezuela's arrangement, DANE is a separate administrative department with a degree of institutional independence from the central bank (Banco de la Republica) and the finance ministry. This separation is important -- it provides a structural buffer against the kind of political capture that compromised the BCV.
+In middle-income developing countries with functional institutions, GDP is typically produced by a national statistical agency that operates as a separate administrative department with a degree of institutional independence from the central bank and the finance ministry. This separation is important -- it provides a structural buffer against the kind of political capture that has compromised central bank statistical functions in crisis economies.
 
-DANE follows the SNA 2008 framework and has undergone periodic modernization. The current national accounts use a base year of 2015 (updated from 2005), and DANE publishes GDP using all three approaches -- expenditure, income, and production -- with the production (value-added) approach as the primary methodology.
+These agencies follow the SNA 2008 framework and undergo periodic modernization. They publish GDP using multiple approaches -- expenditure, income, and production -- with the production (value-added) approach typically as the primary methodology.
 
 ### 3.2 Data Sources and Methodology
 
-DANE draws on a more robust institutional ecosystem than the BCV:
+Statistical agencies in middle-income countries draw on a more robust institutional ecosystem than crisis-economy central banks:
 
-- **Monthly Indicator of Economic Activity (ISE):** A monthly GDP proxy that tracks output across major sectors, published with a roughly 6-8 week lag. This is one of DANE's stronger products and provides higher-frequency tracking than quarterly GDP alone.
+- **Monthly economic activity indicators:** Monthly GDP proxies that track output across major sectors, published with a roughly 6-8 week lag. These provide higher-frequency tracking than quarterly GDP alone.
 
-- **Encuesta Mensual Manufacturera (Monthly Manufacturing Survey):** Covers formal manufacturing establishments above a size threshold, tracking production, sales, and employment.
+- **Monthly manufacturing surveys:** Covering formal manufacturing establishments above a size threshold, tracking production, sales, and employment.
 
-- **Encuesta Mensual de Comercio (Monthly Retail Trade Survey):** Covers formal retail and wholesale establishments.
+- **Monthly retail trade surveys:** Covering formal retail and wholesale establishments.
 
-- **Gran Encuesta Integrada de Hogares (GEIH):** The main household survey, providing employment, income, and consumption data. Sample of approximately 23,000 households per month.
+- **Household surveys:** The main household survey, providing employment, income, and consumption data. Samples typically run tens of thousands of households per month.
 
-- **DIAN (tax authority) data:** Customs records for trade, VAT collections as a proxy for formal economic activity, income tax records.
+- **Tax authority data:** Customs records for trade, VAT collections as a proxy for formal economic activity, income tax records.
 
-- **Banco de la Republica data:** Balance of payments, financial sector statistics, monetary aggregates.
+- **Central bank data:** Balance of payments, financial sector statistics, monetary aggregates.
 
-- **Administrative records:** Construction permits (from municipal authorities), vehicle registrations, energy consumption (from XM, the electricity market operator), agricultural production data (from ministry of agriculture and regional agricultural assessments).
+- **Administrative records:** Construction permits (from municipal authorities), vehicle registrations, energy consumption (from electricity market operators), agricultural production data (from ministries of agriculture and regional assessments).
 
 ### 3.3 Release Cycle
 
-DANE's GDP release cycle is slower than the US but more regular and predictable than Venezuela's:
+GDP release cycles in middle-income developing countries are slower than the US but more regular and predictable than crisis economies:
 
-- **ISE (Monthly GDP proxy):** Released approximately 6-8 weeks after the reference month. Provides a useful high-frequency signal but is a proxy, not official GDP.
+- **Monthly GDP proxy:** Released approximately 6-8 weeks after the reference month. Provides a useful high-frequency signal but is a proxy, not official GDP.
 - **Quarterly GDP (preliminary):** Released approximately 45-60 days after the quarter ends. This is the headline figure.
 - **Quarterly GDP (revised):** Released approximately 75-90 days after the quarter ends.
 - **Annual GDP:** Published in the following year, incorporating more complete source data.
-- **Base year revisions:** Conducted periodically (the most recent was the shift from base year 2005 to base year 2015, completed in 2018-2019).
+- **Base year revisions:** Conducted periodically (typically every 5-10 years).
 
-Compared to the US (advance estimate at 30 days), Colombia's quarterly GDP arrives with a longer lag. Compared to Venezuela, it arrives at all.
+Compared to the US (advance estimate at 30 days), these quarterly GDP figures arrive with a longer lag. Compared to crisis economies, they arrive at all.
 
 ### 3.4 Strengths
 
-Relative to Venezuela and many other Latin American statistical systems, DANE has notable strengths:
+Relative to crisis economies, functional statistical agencies have notable strengths:
 
-- **Institutional continuity:** DANE has operated continuously through multiple administrations of different political orientations. It has not experienced the kind of institutional capture that destroyed the BCV's credibility.
+- **Institutional continuity:** They have operated continuously through multiple administrations of different political orientations, without the kind of institutional capture that destroys credibility.
 
-- **Technical capacity:** DANE has invested in modernization, including geospatial data systems, big data integration pilots (using satellite imagery and scanner data), and improved sampling methodologies. It participates in international statistical cooperation programs with Eurostat, the OECD, and the World Bank.
+- **Technical capacity:** Many have invested in modernization, including geospatial data systems, big data integration pilots (using satellite imagery and scanner data), and improved sampling methodologies. They participate in international statistical cooperation programs with Eurostat, the OECD, and the World Bank.
 
-- **Transparency:** DANE publishes detailed methodological documentation, makes microdata available for research, and maintains an accessible data portal (dane.gov.co). Methodological changes are documented and subject to peer review.
+- **Transparency:** They publish detailed methodological documentation, make microdata available for research, and maintain accessible data portals. Methodological changes are documented and subject to peer review.
 
-- **OECD accession process:** Colombia's accession to the OECD (completed in April 2020) required compliance with OECD statistical standards, which drove significant improvements in DANE's methodology and data quality during the 2010s.
+- **International standards compliance:** Countries that have undergone or are undergoing OECD accession or similar processes have been driven to improve their statistical standards significantly.
 
 ### 3.5 Limitations
 
-Despite these strengths, DANE faces significant limitations that are characteristic of middle-income country statistical systems:
+Despite these strengths, statistical agencies in middle-income developing countries face significant limitations:
 
-- **Informal economy:** Colombia's informal sector is large -- an estimated 47-60% of employment is informal, depending on the definition used (DANE's own labor force survey puts it at roughly 56% for the 13 major metropolitan areas in recent years). DANE makes adjustments for informal activity in its national accounts using household survey data and mixed-income estimates, but these adjustments are inherently imprecise. The agriculture sector, much of which is small-scale and informal, is particularly difficult to measure.
+- **Informal economy:** Informal sectors are large -- an estimated 40-60% of employment is informal, depending on the country and definition used. Statistical agencies make adjustments for informal activity in national accounts using household survey data and mixed-income estimates, but these adjustments are inherently imprecise. The agriculture sector, much of which is small-scale and informal, is particularly difficult to measure.
 
-- **Rural coverage:** Colombia's geography -- Andean highlands, Pacific coast, Amazon basin, Orinoco plains -- makes comprehensive data collection extremely difficult. Conflict-affected and remote rural areas have historically been undersampled in surveys. The former FARC-controlled territories, covering perhaps 30% of Colombia's land area, were largely statistically invisible during the conflict period. Post-peace agreement (2016), coverage has improved but remains incomplete.
+- **Rural coverage:** Geographic diversity -- mountains, coasts, forests, plains -- makes comprehensive data collection extremely difficult. Conflict-affected and remote rural areas have historically been undersampled in surveys. Large portions of national territory may be largely statistically invisible during conflict periods.
 
-- **Coca and illegal mining:** Colombia is the world's largest cocaine producer. The coca economy -- cultivation, processing, trafficking -- generates substantial income that largely escapes GDP measurement. DANE does not include illegal drug production in its GDP estimates, consistent with SNA guidelines that recommend inclusion in principle but acknowledge the practical impossibility of measurement. The same applies to illegal gold mining, which has expanded significantly in recent years. Estimates of the illegal economy's contribution to total output vary widely, from 3% to 10% of measured GDP.
+- **Illegal economies:** In countries with significant illegal extraction or production (drugs, mining, logging), substantial income escapes GDP measurement. Statistical agencies typically do not include illegal production in GDP estimates, consistent with SNA guidelines that recommend inclusion in principle but acknowledge the practical impossibility of measurement. Estimates of illegal economies' contribution to total output vary widely.
 
-- **Lag in services measurement:** While DANE has improved its manufacturing and retail surveys, services sector measurement remains weaker. Colombia's services sector represents approximately 60% of GDP, and the survey infrastructure for services -- particularly informal services, platform-based services, and professional services -- is less developed than for goods-producing sectors.
+- **Lag in services measurement:** While manufacturing and retail surveys have improved, services sector measurement remains weaker. Services typically represent 50-65% of GDP in middle-income countries, and the survey infrastructure for services -- particularly informal services, platform-based services, and professional services -- is less developed than for goods-producing sectors.
 
-- **Subnational data:** DANE produces departmental (state-level) GDP estimates, but with a significant additional lag (often 12-18 months). For a country where economic conditions vary enormously between Bogota, the coffee axis, the Pacific coast, and the eastern plains, national GDP figures obscure critical regional variation.
+- **Subnational data:** State or departmental-level GDP estimates are produced with significant additional lag (often 12-18 months). For countries where economic conditions vary enormously between the capital, agricultural regions, coastal areas, and hinterlands, national GDP figures obscure critical regional variation.
 
-- **Venezuelan migration:** Colombia has received approximately 2.9 million Venezuelan migrants and refugees (Migracion Colombia figures, 2023). This massive population influx affects GDP both through additional economic activity (migrants working, consuming, starting businesses) and through measurement challenges (migrants in the informal sector are harder to survey, their remittances flow through informal channels, their economic activity may not be fully captured in existing survey frames).
+- **Mass migration effects:** Countries receiving or sending large migration flows face GDP measurement challenges: migrants in the informal sector are harder to survey, remittances flow through informal channels, and economic activity from migrant populations may not be fully captured in existing survey frames.
 
 ---
 
@@ -234,107 +234,107 @@ The US system has: institutional independence, 500 dedicated staff, a $130+ mill
 
 And it still gets the number wrong by 1.7 percentage points on average, takes years to finalize figures, and misses significant economic activity.
 
-Venezuela has none of these advantages. Colombia has some of them, partially. The gap between what the best system in the world can do and what developing country systems actually deliver is not incremental. It is a chasm.
+Crisis economies have none of these advantages. Middle-income developing countries have some of them, partially. The gap between what the best system in the world can do and what developing country systems actually deliver is not incremental. It is a chasm.
 
 ---
 
 ## 5. The Gap: Why Developing Country GDP Measurement Fails Worse
 
-The differences between US GDP measurement and Venezuelan/Colombian GDP measurement are not merely quantitative (longer lags, bigger revisions). They are qualitative -- different categories of failure.
+The differences between US GDP measurement and developing country GDP measurement are not merely quantitative (longer lags, bigger revisions). They are qualitative -- different categories of failure.
 
 ### 5.1 Institutional Failure vs. Institutional Limitation
 
 The BEA faces limitations: survey response rates decline, budgets are tight, methodological improvements are slow. But the institution functions. It publishes on schedule. Its methodology is documented. Its staff are competent professionals operating with institutional independence.
 
-The BCV experienced institutional capture. Its independence was revoked in practice. Publication decisions became political. Staff with technical expertise emigrated. The institution stopped performing its core function for years. This is not a measurement problem -- it is a governance failure that eliminates the possibility of measurement.
+Central banks in crisis economies have experienced institutional capture. Their independence was revoked in practice. Publication decisions became political. Staff with technical expertise emigrated. The institution stopped performing its core function for years. This is not a measurement problem -- it is a governance failure that eliminates the possibility of measurement.
 
-DANE sits between these extremes. It functions and maintains credibility, but operates with fewer resources, less developed survey infrastructure, and in a more challenging measurement environment than the BEA.
+Statistical agencies in middle-income developing countries sit between these extremes. They function and maintain credibility, but operate with fewer resources, less developed survey infrastructure, and in a more challenging measurement environment than the BEA.
 
 ### 5.2 The Informal Economy: A Difference in Kind
 
 In the US, the informal economy is a residual -- a relatively small share of activity that the BEA adjusts for using audit data and statistical models. The formal economy is the economy, and informal activity is a correction factor.
 
-In Venezuela, the informal economy is the economy. When 60%+ of activity occurs outside formal channels -- cash transactions, barter, cross-border smuggling, dollarized transactions that bypass the banking system, street vending, informal transportation, unlicensed services -- GDP is not measuring the economy with some error. It is measuring a minority of the economy and extrapolating.
+In crisis economies, the informal economy is the economy. When 60%+ of activity occurs outside formal channels -- cash transactions, barter, cross-border smuggling, dollarized transactions that bypass the banking system, street vending, informal transportation, unlicensed services -- GDP is not measuring the economy with some error. It is measuring a minority of the economy and extrapolating.
 
-In Colombia, the situation is intermediate but still severe. With 50%+ of employment in the informal sector, DANE's surveys systematically underweight the economic activity of millions of people. The household survey (GEIH) captures some of this through employment and income questions, but converting informal employment into output estimates requires assumptions that compound uncertainty.
+In middle-income developing countries, the situation is intermediate but still severe. With 40-60% of employment in the informal sector, surveys systematically underweight the economic activity of millions of people. Household surveys capture some of this through employment and income questions, but converting informal employment into output estimates requires assumptions that compound uncertainty.
 
 ### 5.3 Currency and Price Measurement Collapse
 
 GDP requires converting nominal values to real (inflation-adjusted) values using price deflators. This requires a functioning price measurement system.
 
-In Venezuela:
-- The BCV stopped publishing inflation data for years
-- When hyperinflation reached an annualized rate estimated at over 1,000,000% in 2018 (according to the National Assembly's estimates), the concept of a price deflator becomes almost meaningless
-- Multiple exchange rates meant that the "price" of imported goods depended on which exchange rate you used
-- Widespread dollarization means that much of the economy is priced in dollars, but GDP is reported in bolivares
-- Redenominations (removing 14 zeros total) create indexing challenges that make time-series comparison extremely difficult
+In crisis economies:
+- The central bank may stop publishing inflation data for years
+- When hyperinflation reaches annualized rates of over 1,000,000%, the concept of a price deflator becomes almost meaningless
+- Multiple exchange rates mean that the "price" of imported goods depends on which exchange rate you use
+- Widespread dollarization means much of the economy is priced in dollars, but GDP is reported in local currency
+- Currency redenominations (removing multiple zeros) create indexing challenges that make time-series comparison extremely difficult
 
-In Colombia:
-- DANE produces a credible Consumer Price Index (IPC), published monthly
+In middle-income developing countries:
+- The statistical agency produces a credible Consumer Price Index, published monthly
 - But the CPI primarily covers urban areas and formal transactions
 - Rural and informal prices may diverge significantly from the measured CPI
-- The coca economy has its own price dynamics entirely outside the CPI
+- Illegal economies (drugs, mining) have their own price dynamics entirely outside the CPI
 
 ### 5.4 Population and Labor Force Uncertainty
 
 GDP per capita requires an accurate population denominator. The US has a decennial census and continuous population estimates that are reasonably accurate.
 
-Venezuela has not conducted a census since 2011. The massive emigration of 2014-2023 (estimated 7.7 million people by UNHCR, roughly 25% of the pre-crisis population) means that population estimates are highly uncertain. If you do not know how many people are in the country, you cannot compute per-capita income, labor productivity, or consumption per household with any precision.
+Crisis economies may not have conducted a census for a decade or more. Mass emigration -- sometimes removing 20-25% of the pre-crisis population within a few years -- means that population estimates are highly uncertain. If you do not know how many people are in the country, you cannot compute per-capita income, labor productivity, or consumption per household with any precision.
 
-Colombia's population estimates are stronger (census conducted in 2018), but the influx of Venezuelan migrants creates uncertainty at the margins, particularly for undocumented migrants in the informal sector.
+Middle-income developing countries' population estimates are typically stronger (with more recent censuses), but large migration flows -- inbound or outbound -- create uncertainty at the margins, particularly for undocumented migrants in the informal sector.
 
 ### 5.5 The Feedback Loop: Bad Data Produces Bad Policy Produces Worse Data
 
 In functioning economies, GDP data -- even imperfect -- informs policy, which shapes economic outcomes, which generates data for the next measurement cycle. This is a virtuous (or at least functional) loop.
 
-In Venezuela, the loop became vicious. Unreliable GDP data contributed to unrealistic fiscal planning, which contributed to misguided economic policies (price controls, exchange rate manipulation, money printing), which deepened the economic crisis, which further degraded the statistical infrastructure, which made future measurement even less possible. The BCV's failure to publish data was not just a symptom of the crisis -- it was a contributor. Without reliable economic data, neither the government nor private actors could make informed decisions.
+In crisis economies, the loop becomes vicious. Unreliable GDP data contributes to unrealistic fiscal planning, which contributes to misguided economic policies (price controls, exchange rate manipulation, money printing), which deepens the economic crisis, which further degrades the statistical infrastructure, which makes future measurement even less possible. A central bank's failure to publish data is not just a symptom of the crisis -- it is a contributor. Without reliable economic data, neither the government nor private actors can make informed decisions.
 
 ---
 
-## 6. What Real-Time Alternatives Need to Address in Venezuela and Colombia
+## 6. What Real-Time Alternatives Need to Address in Developing Economies
 
-Any system aiming to provide real-time economic measurement in Venezuela and Colombia must confront challenges that are fundamentally different from -- and harder than -- the challenges of real-time GDP measurement in the US.
+Any system aiming to provide real-time economic measurement in developing and crisis economies must confront challenges that are fundamentally different from -- and harder than -- the challenges of real-time GDP measurement in the US.
 
 ### 6.1 Measuring the Informal Economy
 
 This is the single largest measurement gap and the most important problem for econOS to solve.
 
-**The scale:** In Venezuela, 40-60%+ of economic activity is informal. In Colombia, the figure is 35-50% depending on measurement methodology. This is not a margin-of-error problem. Missing half the economy renders the entire measurement exercise unreliable.
+**The scale:** In crisis economies, 40-60%+ of economic activity is informal. In middle-income developing countries, the figure is 35-50% depending on measurement methodology. This is not a margin-of-error problem. Missing half the economy renders the entire measurement exercise unreliable.
 
 **What informal activity looks like:**
-- Street vendors selling food, clothing, electronics, and household goods in every Venezuelan and Colombian city
-- Informal transportation networks (mototaxis, colectivos, informal bus routes)
-- Cross-border trade between Venezuela and Colombia through official and unofficial border crossings (Cucuta-San Antonio/Urena, Maicao-Maracaibo corridor)
+- Street vendors selling food, clothing, electronics, and household goods in every major city
+- Informal transportation networks (motorcycle taxis, informal minibuses, unregistered bus routes)
+- Cross-border trade through official and unofficial border crossings
 - Domestic workers, construction laborers, agricultural workers paid in cash
 - Small-scale manufacturing and repair services operating without registration
 - Digital freelancing and remote work compensated through international platforms and informal remittance channels
 
 **What could actually measure it:**
-- **Mobile phone data:** Smartphone penetration in Venezuela is estimated at 40-60% even during the crisis, and higher in Colombia (70%+). Call detail records, mobile money transactions, and app usage patterns can serve as proxy indicators of economic activity. Telefonica (Movistar), Digitel, and Movilnet in Venezuela; Claro, Movistar, and Tigo in Colombia hold data that could be transformative.
-- **Satellite imagery:** Night light intensity (VIIRS/DMSP satellite data) has been used by economists to estimate GDP in data-poor environments. For Venezuela specifically, research by Martinez (2022) and others has used night lights as a cross-check on official GDP figures, finding that night light patterns were inconsistent with reported GDP during the crisis years. Beyond night lights: commercial satellite imagery can track construction activity, agricultural land use, traffic density, and industrial facility operation.
-- **Electricity consumption:** Grid-level electricity data tracks economic activity in real time. XM in Colombia publishes electricity dispatch data. In Venezuela, CORPOELEC data is less accessible but electricity consumption remains a strong proxy for economic activity, particularly in manufacturing and commercial sectors.
-- **Remittance flows:** The Venezuelan diaspora sends an estimated $3-5 billion annually in remittances (exact figures are uncertain because much flows through informal channels). Formal remittance platforms (Zelle, which is widely used in Venezuela, along with services like Reserve, Binance P2P, and traditional operators like Western Union) could provide real-time indicators of a major income source.
-- **Border crossing data:** The Cucuta-San Antonio border crossing between Colombia and Venezuela sees thousands of crossings daily, many involving informal trade. Migration Colombia publishes crossing statistics. Tracking the volume and composition of cross-border activity provides economic intelligence that neither country's GDP figures capture.
+- **Mobile phone data:** Smartphone penetration in developing countries ranges from 40-70%+, even during crises. Call detail records, mobile money transactions, and app usage patterns can serve as proxy indicators of economic activity. Major telecom operators hold data that could be transformative.
+- **Satellite imagery:** Night light intensity (VIIRS/DMSP satellite data) has been used by economists to estimate GDP in data-poor environments. Research by Martinez (2022) and others has used night lights as a cross-check on official GDP figures in crisis economies, finding that night light patterns were inconsistent with reported GDP during crisis years. Beyond night lights: commercial satellite imagery can track construction activity, agricultural land use, traffic density, and industrial facility operation.
+- **Electricity consumption:** Grid-level electricity data tracks economic activity in real time. Electricity market operators in many developing countries publish dispatch data. Electricity consumption remains a strong proxy for economic activity, particularly in manufacturing and commercial sectors.
+- **Remittance flows:** Diasporas from crisis economies send billions annually in remittances (exact figures are uncertain because much flows through informal channels). Formal remittance platforms, dollar-denominated payment services, P2P exchange platforms, and traditional operators could provide real-time indicators of a major income source.
+- **Border crossing data:** In countries with porous borders, border crossings see thousands of daily crossings, many involving informal trade. Migration authorities publish crossing statistics. Tracking the volume and composition of cross-border activity provides economic intelligence that neither country's GDP figures capture.
 
 ### 6.2 Measuring Dollarization
 
-Venezuela's economy is substantially dollarized, and this creates both a measurement challenge and an opportunity.
+Many crisis economies are substantially dollarized, and this creates both a measurement challenge and an opportunity.
 
-**The challenge:** A dollarized transaction in Caracas -- say, a meal paid for in USD cash at a restaurant -- may not appear in any official Venezuelan data system. It is not captured by the bolivar-denominated banking system. It may not be reported to SENIAT. It does not appear in BCV monetary statistics. It is invisible to the GDP measurement apparatus.
+**The challenge:** A dollarized transaction -- say, a meal paid for in USD cash at a restaurant -- may not appear in any official data system. It is not captured by the local-currency banking system. It may not be reported to the tax authority. It does not appear in central bank monetary statistics. It is invisible to the GDP measurement apparatus.
 
 **The opportunity:** Dollar-denominated transactions increasingly occur through electronic channels that are, in principle, observable:
-- **Zelle:** Has become a de facto payment system in Venezuelan commerce, with US bank accounts used for domestic transactions. The volume of Zelle transfers to Venezuelan-linked accounts is a meaningful economic indicator.
-- **Point-of-sale terminals:** Venezuela saw rapid growth in POS terminal deployment even during the crisis, processing both bolivar and (increasingly) dollar-denominated transactions. Aggregated POS data could provide real-time consumption indicators.
-- **Cryptocurrency exchanges:** Venezuela has significant trading volume on platforms like Binance (particularly P2P trading), LocalBitcoins (before its closure), and Reserve Protocol. These platforms have transaction data that reflects real economic activity.
-- **Mobile payment platforms:** Platforms like Reserve, and informal payment arrangements via WhatsApp groups and social media, facilitate dollar-denominated exchange.
+- **Dollar-denominated payment platforms:** US-linked payment services have become de facto payment systems in some crisis economies, with US bank accounts used for domestic transactions. Transfer volumes to these countries are meaningful economic indicators.
+- **Point-of-sale terminals:** Even in crisis economies, POS terminal deployment has grown, processing both local-currency and (increasingly) dollar-denominated transactions. Aggregated POS data could provide real-time consumption indicators.
+- **Cryptocurrency exchanges:** Crisis economies often see significant trading volume on P2P cryptocurrency platforms. These platforms have transaction data that reflects real economic activity.
+- **Mobile payment platforms:** Various digital payment platforms and informal payment arrangements via messaging apps facilitate dollar-denominated exchange.
 
-In Colombia, dollarization is less pervasive but present, particularly in border regions and in transactions involving Venezuelan migrants. The Banco de la Republica tracks some dollar-denominated activity, but informal dollar use in border towns like Cucuta is largely unmeasured.
+In middle-income developing countries, dollarization is less pervasive but present, particularly in border regions and in transactions involving migrant populations. Central banks track some dollar-denominated activity, but informal dollar use in border areas is largely unmeasured.
 
 ### 6.3 Dealing with Unreliable Benchmarks
 
 Traditional GDP nowcasting (as practiced by the Atlanta Fed's GDPNow or the New York Fed's Nowcasting Report) works by using high-frequency indicators to predict the official GDP release. The models are trained on the relationship between indicators and official GDP figures.
 
-In Venezuela, there is no reliable official GDP figure to benchmark against. The BCV's numbers, when published, are questioned. Independent estimates from Torino Capital, Ecoanalitica, and the IMF disagree with each other and with official figures. A nowcasting model trained on unreliable benchmarks will produce unreliable nowcasts.
+In crisis economies, there is no reliable official GDP figure to benchmark against. Central bank numbers, when published, are questioned. Independent estimates from investment banks, economic consultancies, and the IMF disagree with each other and with official figures. A nowcasting model trained on unreliable benchmarks will produce unreliable nowcasts.
 
 This means econOS cannot simply replicate the developed-country approach of predicting official GDP in real time. It must build an independent measurement framework -- one that:
 
@@ -346,26 +346,26 @@ This means econOS cannot simply replicate the developed-country approach of pred
 
 ### 6.4 Accounting for Humanitarian Dimensions
 
-Standard GDP measurement does not incorporate humanitarian indicators, but in the Venezuelan context, economic measurement cannot be separated from humanitarian crisis tracking:
+Standard GDP measurement does not incorporate humanitarian indicators, but in crisis economies, economic measurement cannot be separated from humanitarian crisis tracking:
 
-- **Food security:** The Encuesta Nacional de Condiciones de Vida (ENCOVI), conducted by Venezuelan universities (UCAB, UCV, USB), has documented that over 90% of households had insufficient income to cover the basic food basket at the depth of the crisis. Food consumption patterns -- measurable through market prices, import data, and transaction records -- are simultaneously economic and humanitarian indicators.
+- **Food security:** Independent university-conducted surveys in crisis economies have documented that the vast majority of households had insufficient income to cover the basic food basket at the depth of crises. Food consumption patterns -- measurable through market prices, import data, and transaction records -- are simultaneously economic and humanitarian indicators.
 
-- **Health system collapse:** The collapse of Venezuela's health system (hospitals without reliable electricity, medicine shortages, emigration of medical professionals) affects economic output through workforce health, labor productivity, and household spending patterns. Disease surveillance data (when available) is an economic indicator in this context.
+- **Health system collapse:** The collapse of health systems (hospitals without reliable electricity, medicine shortages, emigration of medical professionals) affects economic output through workforce health, labor productivity, and household spending patterns. Disease surveillance data (when available) is an economic indicator in this context.
 
 - **Education disruption:** School enrollment and attendance data track both human capital investment and household economic decisions (children pulled from school to work or because families cannot afford supplies or transportation).
 
-econOS in a Venezuelan context is not just measuring output. It is measuring the economic dimensions of a humanitarian crisis, and the data it produces will serve humanitarian as well as economic purposes.
+In crisis economies, econOS is not just measuring output. It is measuring the economic dimensions of a humanitarian crisis, and the data it produces will serve humanitarian as well as economic purposes.
 
-### 6.5 Cross-Border Integration: Venezuela-Colombia as a Single Economic Zone
+### 6.5 Cross-Border Integration
 
-The Venezuelan crisis has created deep economic integration between Venezuela and Colombia that neither country's GDP figures capture:
+Economic crises create deep cross-border economic integration that neither country's GDP figures capture:
 
-- Millions of Venezuelans live in Colombia and send remittances back, generating economic activity in both countries
-- Informal cross-border trade moves consumer goods into Venezuela and (sometimes) Venezuelan gasoline and subsidized products into Colombia
-- Colombian businesses supply the Venezuelan market through both formal and informal channels
-- The Cucuta-San Antonio/Urena corridor functions as a single economic zone that spans the border
+- Millions of emigrants live in neighboring countries and send remittances back, generating economic activity in both countries
+- Informal cross-border trade moves consumer goods in both directions
+- Businesses in neighboring countries supply crisis-economy markets through both formal and informal channels
+- Border corridors function as single economic zones that span national boundaries
 
-Any serious real-time economic measurement system for Venezuela must also account for the Colombian side of the equation, and vice versa. This is an argument for building econOS to cover both countries from the start, with the border economy as a critical measurement target.
+Any serious real-time economic measurement system for a crisis economy must also account for cross-border dynamics. This is an argument for building econOS to cover neighboring countries simultaneously, with border economies as critical measurement targets.
 
 ---
 
@@ -375,84 +375,84 @@ Any serious real-time economic measurement system for Venezuela must also accoun
 
 In the US, econOS would improve GDP measurement by reducing the 30-day lag and narrowing the 1.7-percentage-point revision error. This is valuable but incremental. The BEA already provides a functional, if imperfect, picture of the economy.
 
-In Venezuela, econOS would fill a void. For years, there was no reliable GDP data at all. Even now, official figures are delayed, methodologically opaque, and politically compromised. International organizations resort to estimates. Businesses operate blind. Policy is made without a factual foundation.
+In crisis economies, econOS would fill a void. For years, there may be no reliable GDP data at all. Even when official figures resume, they are delayed, methodologically opaque, and politically compromised. International organizations resort to estimates. Businesses operate blind. Policy is made without a factual foundation.
 
 The value proposition is categorically different:
 
-| Dimension | US (econOS as improvement) | Venezuela (econOS as replacement) |
+| Dimension | US (econOS as improvement) | Crisis Economy (econOS as replacement) |
 |---|---|---|
 | **Existing data quality** | Good but lagged | Non-existent or unreliable |
 | **Official GDP availability** | Published on schedule, every quarter | Publication irregular, multi-year gaps |
 | **Informal economy** | 5-12% -- a correction factor | 40-60%+ -- the majority of activity |
 | **Currency measurement** | Stable dollar denomination | Hyperinflation, redenominations, dollarization |
-| **Institutional trust** | High (BEA is credible) | Near zero (BCV is politically captured) |
+| **Institutional trust** | High (BEA is credible) | Near zero (central bank is politically captured) |
 | **What econOS provides** | Faster, more granular version of existing data | The only comprehensive economic picture available |
 
-### 7.2 The Case for Venezuela First
+### 7.2 The Case for Starting in Crisis Economies
 
-Starting econOS in Venezuela is strategically sound for several reasons:
+Starting econOS in a crisis economy is strategically sound for several reasons:
 
-**1. Maximum impact per unit of effort.** In the US, econOS competes with the BEA, the Fed's nowcasting models, and a deep ecosystem of private-sector economic data providers. In Venezuela, it competes with nothing. Any credible, regularly updated economic measurement system would be transformative.
+**1. Maximum impact per unit of effort.** In the US, econOS competes with the BEA, the Fed's nowcasting models, and a deep ecosystem of private-sector economic data providers. In a crisis economy, it competes with nothing. Any credible, regularly updated economic measurement system would be transformative.
 
-**2. The reconstruction imperative.** Venezuela will eventually undergo economic reconstruction, whether through political transition, gradual reform, or some combination. Reconstruction requires data. You cannot allocate resources, target investment, measure progress, or hold institutions accountable without economic measurement. econOS can provide the data infrastructure for reconstruction before formal statistical institutions are rebuilt.
+**2. The reconstruction imperative.** Crisis economies will eventually undergo economic reconstruction, whether through political transition, gradual reform, or some combination. Reconstruction requires data. You cannot allocate resources, target investment, measure progress, or hold institutions accountable without economic measurement. econOS can provide the data infrastructure for reconstruction before formal statistical institutions are rebuilt.
 
-**3. The diaspora as a resource.** The Venezuelan diaspora includes economists, data scientists, engineers, and other professionals who left during the crisis. Many are motivated to contribute to recovery. An open-source project targeting Venezuelan economic measurement can mobilize this talent pool in ways that a government statistical agency cannot.
+**3. The diaspora as a resource.** Diasporas from crisis economies include economists, data scientists, engineers, and other professionals who left during the crisis. Many are motivated to contribute to recovery. An open-source project targeting their home country's economic measurement can mobilize this talent pool in ways that a government statistical agency cannot.
 
-**4. The informal economy as a laboratory.** If econOS can measure economic activity in an environment where 60% of transactions are informal, currency is chaotic, and official data does not exist, it can measure economic activity anywhere. Venezuela is the hardest possible test case. Success there validates the approach for every developing economy with similar (if less extreme) challenges.
+**4. The informal economy as a laboratory.** If econOS can measure economic activity in an environment where 60% of transactions are informal, currency is chaotic, and official data does not exist, it can measure economic activity anywhere. A crisis economy is the hardest possible test case. Success there validates the approach for every developing economy with similar (if less extreme) challenges.
 
-**5. International organization demand.** The IMF, World Bank, Inter-American Development Bank, UNHCR, and numerous NGOs need reliable Venezuelan economic data for their own operations. They currently rely on estimates and proxies. econOS could serve as a trusted data source for the international community, which provides both user demand and potential institutional support.
+**5. International organization demand.** The IMF, World Bank, regional development banks, UNHCR, and numerous NGOs need reliable economic data for crisis economies. They currently rely on estimates and proxies. econOS could serve as a trusted data source for the international community, which provides both user demand and potential institutional support.
 
-### 7.3 The Path from Venezuela to Colombia
+### 7.3 The Path to Middle-Income Developing Countries
 
-Colombia is the natural second deployment for econOS:
+Middle-income developing countries with functional statistical agencies are the natural validation deployment for econOS:
 
-**1. DANE provides a benchmark.** Unlike Venezuela, Colombia has a functioning statistical agency producing real GDP data. This means econOS can be validated against official figures. If econOS's real-time estimates consistently align with DANE's eventual GDP releases (or systematically outperform them in predicting revisions), this builds credibility that is impossible to establish in Venezuela alone.
+**1. Established benchmarks.** Unlike crisis economies, these countries have functioning statistical agencies producing real GDP data. This means econOS can be validated against official figures. If econOS's real-time estimates consistently align with eventual official GDP releases (or systematically outperform them in predicting revisions), this builds credibility that is impossible to establish in crisis economies alone.
 
-**2. Shared challenges.** The informal economy problem, the rural coverage gap, the border economy -- these challenges are shared with Venezuela and require similar measurement approaches. Tools built for Venezuela's informal economy translate directly to Colombia's.
+**2. Shared challenges.** The informal economy problem, the rural coverage gap, the border economy -- these challenges are shared with crisis economies and require similar measurement approaches. Tools built for one country's informal economy translate directly to another's.
 
-**3. The migration link.** With 2.9 million Venezuelan migrants in Colombia, the two countries' economies are deeply intertwined. Measuring the Venezuelan economy requires understanding the Colombian economy, and vice versa. A system covering both countries captures the cross-border dynamics that neither country's statistical system addresses.
+**3. Migration links.** Crisis economies and their neighbors are often deeply intertwined through migration flows. Measuring one country's economy requires understanding the other's, and vice versa. A system covering both captures the cross-border dynamics that neither country's statistical system addresses.
 
-**4. Institutional partnership potential.** DANE, unlike the BCV, is a credible institution open to innovation. It has engaged with big data pilot projects, satellite data, and alternative measurement approaches. DANE could be a partner for econOS in Colombia in a way that the BCV currently cannot be in Venezuela.
+**4. Institutional partnership potential.** Credible statistical agencies in middle-income countries are often open to innovation -- engaging with big data pilot projects, satellite data, and alternative measurement approaches. They could be partners for econOS in ways that politically captured central banks cannot.
 
 ### 7.4 What econOS Would Concretely Produce
 
-For Venezuela:
+For crisis economies:
 
-1. **A weekly economic activity index** based on satellite data (night lights, commercial activity indicators), electricity consumption, cross-border trade flows, remittance volumes, and available transaction data. This would be the first regularly published, methodologically transparent measure of Venezuelan economic activity.
+1. **A weekly economic activity index** based on satellite data (night lights, commercial activity indicators), electricity consumption, cross-border trade flows, remittance volumes, and available transaction data. This would be the first regularly published, methodologically transparent measure of economic activity in countries where official data has gone dark.
 
-2. **A real-time price tracker** covering major consumption categories across Venezuelan cities, using web-scraped prices, crowdsourced price reports, and available scanner data. This addresses the CPI blackout that made real GDP calculation impossible.
+2. **A real-time price tracker** covering major consumption categories across major cities, using web-scraped prices, crowdsourced price reports, and available scanner data. This addresses the CPI blackouts that make real GDP calculation impossible.
 
-3. **Sectoral activity estimates** for key sectors: oil (using satellite monitoring of production facilities, tanker tracking, and OPEC secondary source data), agriculture (using satellite crop monitoring and market price data), commerce (using available transaction and traffic data), and construction (using satellite imagery and materials import data).
+3. **Sectoral activity estimates** for key sectors: extractive industries (using satellite monitoring of production facilities, tanker/vessel tracking, and international secondary source data), agriculture (using satellite crop monitoring and market price data), commerce (using available transaction and traffic data), and construction (using satellite imagery and materials import data).
 
-4. **A border economy monitor** tracking the Cucuta-San Antonio/Urena corridor and other crossing points, using migration data, trade flow estimates, and price differential analysis.
+4. **A border economy monitor** tracking major border corridors, using migration data, trade flow estimates, and price differential analysis.
 
 5. **Uncertainty-quantified output estimates** that are honest about what they do and do not know. Rather than producing a single GDP number, econOS would produce a range with explicit confidence intervals and documentation of which components are well-measured and which are estimated.
 
-For Colombia:
+For middle-income developing countries:
 
-1. **A real-time GDP nowcast** that can be validated against DANE's quarterly releases, demonstrating the system's accuracy.
+1. **A real-time GDP nowcast** that can be validated against official quarterly releases, demonstrating the system's accuracy.
 
-2. **An informal economy supplement** estimating the output of informal sector workers and enterprises that are underweighted in DANE's survey-based GDP.
+2. **An informal economy supplement** estimating the output of informal sector workers and enterprises that are underweighted in survey-based GDP.
 
-3. **Subnational economic tracking** at higher frequency than DANE's departmental GDP (which lags by 12-18 months), covering all 32 departments plus Bogota.
+3. **Subnational economic tracking** at higher frequency than official state/departmental GDP (which often lags by 12-18 months), covering all administrative regions.
 
-4. **A migration-economy module** tracking the economic integration and contribution of Venezuelan migrants, which is important for both countries' policy planning.
+4. **A migration-economy module** tracking the economic integration and contribution of migrant populations, which is important for policy planning in both origin and destination countries.
 
 ### 7.5 Precedents and Building Blocks
 
 This is not purely theoretical. Relevant precedents include:
 
-- **Night lights as GDP proxy:** Henderson, Storeygard, and Weil (2012) demonstrated that satellite night light intensity is a reliable proxy for GDP in countries with poor statistical systems. This has been replicated for Venezuela specifically by Martinez (2022), who used night lights to assess the credibility of official GDP figures.
+- **Night lights as GDP proxy:** Henderson, Storeygard, and Weil (2012) demonstrated that satellite night light intensity is a reliable proxy for GDP in countries with poor statistical systems. Martinez (2022) replicated this for crisis economies, using night lights to assess the credibility of official GDP figures and finding inconsistencies during crisis years.
 
 - **Mobile money and economic measurement:** In East Africa, mobile money transaction data (M-Pesa and similar platforms) has been used to track economic activity in real time. The Central Bank of Kenya uses mobile money data as an input to its economic indicators.
 
-- **The Billion Prices Project / PriceStats:** Alberto Cavallo and Roberto Rigobon at MIT built a system that scrapes online prices daily to produce real-time inflation estimates. This has been applied to multiple Latin American countries and demonstrated that real-time price measurement is feasible even in volatile environments.
+- **The Billion Prices Project / PriceStats:** Alberto Cavallo and Roberto Rigobon at MIT built a system that scrapes online prices daily to produce real-time inflation estimates. This has been applied to multiple developing countries and demonstrated that real-time price measurement is feasible even in volatile environments.
 
 - **OECD Weekly Tracker:** Uses Google Trends and other high-frequency indicators to produce weekly GDP estimates for member countries. During COVID-19, this approach outperformed traditional nowcasting in several countries.
 
 - **Satellite-based crop monitoring:** USDA's CROP-CAST and ESA's Sentinel satellite programs provide real-time agricultural output estimates that could supplement or replace survey-based agricultural GDP measurement.
 
-- **AIS vessel tracking for trade:** Satellite tracking of container ships and oil tankers provides real-time data on trade flows. For Venezuela, tanker tracking is already used by analysts (including Reuters, TankerTrackers.com, and Kpler) to estimate oil exports independently of official figures.
+- **AIS vessel tracking for trade:** Satellite tracking of container ships and oil tankers provides real-time data on trade flows. For extractive economies, tanker tracking is already used by analysts (including Reuters, specialized tracking services, and Kpler) to estimate exports independently of official figures.
 
 The missing piece is integration. These data sources exist in isolation. econOS provides the standardized schemas, APIs, and aggregation protocols that make them interoperable and combinable into a coherent economic measurement framework.
 
@@ -460,45 +460,40 @@ The missing piece is integration. These data sources exist in isolation. econOS 
 
 ## 8. Summary
 
-GDP measurement in Venezuela and Colombia reveals the full spectrum of what can go wrong with traditional economic statistics in developing countries.
+GDP measurement in developing and crisis economies reveals the full spectrum of what can go wrong with traditional economic statistics.
 
-**Venezuela** represents the worst case: an institution (BCV) that stopped functioning, data that stopped being published, credibility that was destroyed by political capture, and an economy where the majority of activity is invisible to the measurement apparatus. A 75% economic contraction -- the worst peacetime collapse in modern Latin American history -- was imprecisely measured, belatedly documented, and never officially acknowledged at its true scale.
+**Crisis economies** represent the worst case: institutions that stop functioning, data that stops being published, credibility destroyed by political capture, and economies where the majority of activity is invisible to the measurement apparatus. GDP contractions of 70-75% -- the worst peacetime collapses in modern history -- have been imprecisely measured, belatedly documented, and never officially acknowledged at their true scale.
 
-**Colombia** represents a more functional but still limited case: a credible institution (DANE) that publishes regularly and transparently, but with significant gaps in informal economy coverage, rural data, and timeliness. Colombia's GDP figures are useful but incomplete, particularly for the half of economic activity that occurs outside the formal sector.
+**Middle-income developing countries** represent a more functional but still limited case: credible institutions that publish regularly and transparently, but with significant gaps in informal economy coverage, rural data, and timeliness. GDP figures are useful but incomplete, particularly for the 35-50% of economic activity that occurs outside the formal sector.
 
 **The US** represents the best case for traditional methodology: 80+ years of institutional development, a well-resourced statistical agency, a largely formal economy -- and still, a 30-day minimum lag, 1.7-percentage-point average revisions, and significant blind spots.
 
 The key facts for econOS:
 
-- In Venezuela, there is no reliable GDP data. econOS does not compete with existing measurement -- it provides the only measurement.
-- In Colombia, GDP data exists but misses 35-50% of the economy and arrives with a lag. econOS supplements existing measurement and captures what DANE cannot.
-- The informal economy is the central measurement challenge, and it is an order of magnitude larger in Venezuela and Colombia than in the US.
-- Currency chaos in Venezuela makes traditional denomination-based measurement nearly impossible. Dollar-denominated and crypto transactions offer alternative measurement channels.
+- In crisis economies, there is no reliable GDP data. econOS does not compete with existing measurement -- it provides the only measurement.
+- In middle-income developing countries, GDP data exists but misses 35-50% of the economy and arrives with a lag. econOS supplements existing measurement and captures what statistical agencies cannot.
+- The informal economy is the central measurement challenge, and it is an order of magnitude larger in developing countries than in the US.
+- Currency chaos in crisis economies makes traditional denomination-based measurement nearly impossible. Dollar-denominated and crypto transactions offer alternative measurement channels.
 - Alternative data sources (satellite, mobile, transaction, electricity, freight, remittances) are not supplements in this context -- they are primary sources, potentially more reliable than official statistics.
-- Cross-border dynamics between Venezuela and Colombia are economically significant and unmeasured by either country's GDP.
+- Cross-border dynamics between crisis economies and their neighbors are economically significant and unmeasured by either country's GDP.
 
-The opportunity for econOS in Venezuela and Colombia is not to build a faster version of the BEA. It is to build the economic measurement infrastructure that does not currently exist -- an infrastructure that starts from directly observable activity data rather than surveys, that is transparent about its methodology and uncertainty, and that provides the factual foundation for economic recovery.
+The opportunity for econOS is not to build a faster version of the BEA. It is to build the economic measurement infrastructure that does not currently exist -- an infrastructure that starts from directly observable activity data rather than surveys, that is transparent about its methodology and uncertainty, and that provides the factual foundation for economic recovery.
 
-In a country where the central bank went silent for years, an open-source, independently operated, transparently documented economic measurement system is not an improvement. It is a necessity.
+In countries where the central bank has gone silent for years, an open-source, independently operated, transparently documented economic measurement system is not an improvement. It is a necessity.
 
 ---
 
 ## References and Further Reading
 
 - Bureau of Economic Analysis. *Concepts and Methods of the U.S. National Income and Product Accounts* (NIPA Handbook). Updated periodically. Available at bea.gov.
-- Banco Central de Venezuela. National accounts methodology documentation (available intermittently at bcv.org.ve).
-- DANE. *Metodologia General Cuentas Nacionales Anuales de Colombia -- Base 2015.* Available at dane.gov.co.
 - Henderson, J. Vernon, Adam Storeygard, and David N. Weil. "Measuring Economic Growth from Outer Space." *American Economic Review* 102, no. 2 (2012): 994-1028.
 - Martinez, Luis R. "How Much Should We Trust the Dictator's GDP Growth Estimates?" *Journal of Political Economy* 130, no. 10 (2022): 2731-2769.
 - Cavallo, Alberto, and Roberto Rigobon. "The Billion Prices Project: Using Online Prices for Measurement and Research." *Journal of Economic Perspectives* 30, no. 2 (2016): 151-178.
-- ENCOVI (Encuesta Nacional de Condiciones de Vida). Annual reports by UCAB, UCV, and USB. Available at proyectoencovi.com.
-- International Monetary Fund. *World Economic Outlook* (various years). Venezuela country data and estimates.
-- UNHCR. "Venezuela Situation" -- refugee and migrant tracking. Available at unhcr.org.
-- Torino Capital. Venezuelan macroeconomic reports and GDP estimates (various years).
-- Ecoanalitica. Venezuelan economic indicators and alternative GDP estimates.
+- International Monetary Fund. *World Economic Outlook* (various years). Country data and estimates for crisis economies.
+- UNHCR. Refugee and migrant tracking for major displacement crises. Available at unhcr.org.
 - Landefeld, J. Steven, Eugene P. Seskin, and Barbara M. Fraumeni. "Taking the Pulse of the Economy: Measuring GDP." *Journal of Economic Perspectives* 22, no. 2 (2008): 193-216.
 - Kuznets, Simon. *National Income, 1929-1932*. National Bureau of Economic Research, 1934.
 - OECD. "Weekly Tracker of GDP Growth." Methodology documentation. Available at oecd.org.
 - Federal Reserve Bank of Atlanta. GDPNow methodology documentation. Available at atlantafed.org.
 - Croushore, Dean. "Revisions to PCE Inflation Measures: Implications for Monetary Policy." Federal Reserve Bank of Philadelphia Working Paper, various years.
-- Bull, Benedicte, and Antulio Rosales. "Into the Shadows: Sanctions, Rentierism, and Economic Informalization in Venezuela." *European Review of Latin American and Caribbean Studies* 109 (2020): 107-133.
+- Hsieh, Chang-Tai, and Peter J. Klenow. "Misallocation and Manufacturing TFP in China and India." *Quarterly Journal of Economics* 124, no. 4 (2009): 1403-1448.

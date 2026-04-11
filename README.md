@@ -1,6 +1,6 @@
 # econOS -- Economic Operating System
 
-Open-source economic data infrastructure for developing countries. Starting in **Venezuela** and **Colombia**, econOS transforms how people access economic information -- replacing lagging, unreliable, or nonexistent official statistics with near real-time data that empowers individuals to make better decisions about work, investment, education, and mobility.
+Open-source economic data infrastructure for developing and emerging economies. econOS transforms how people access economic information -- replacing lagging, unreliable, or nonexistent official statistics with near real-time data that empowers individuals to make better decisions about work, investment, education, and mobility.
 
 In countries where central banks have stopped publishing data, where inflation makes prices stale within days, and where millions make migration decisions with almost no reliable information -- econOS fills the void.
 
@@ -19,13 +19,13 @@ The intellectual bedrock -- why this project exists, what theory supports it, an
 
 ### [01-data-infrastructure/](01-data-infrastructure/) -- CURRENT FOCUS
 Phase 1: Making economic data near real-time. This is the foundation everything else depends on.
-- **current-landscape/** -- How economic data is measured today in Venezuela, Colombia, and reference countries (and where it fails)
+- **current-landscape/** -- How economic data is measured today in developing countries and reference economies (and where it fails)
 - **modern-data-sources/** -- Mobile payments, web scraping, satellite imagery, remittance flows, social media, IoT
 - **data-categories/** -- Synthesis: how modern sources combine into real-time indicator proxies
 - **technical-challenges/** -- Nowcasting methodology, validation, bias, schemas, scalability
 - **legal-and-privacy/** -- Data rights, aggregation boundaries, ethical considerations
 - **existing-work/** -- Prior art: Billion Prices Project, developing country nowcasting, central bank experiments
-- **proof-of-concept/** -- First target: real-time consumer spending and price tracking in Venezuela
+- **proof-of-concept/** -- First target: real-time consumer spending and price tracking in a developing economy
 
 ### [02-algorithmic-coordination/](02-algorithmic-coordination/) -- Future
 Pre-built analytical layer: translating raw data into actionable signals for key economic areas.
@@ -37,7 +37,7 @@ Pre-built BI views for key life decisions: where to work, what to study, where t
 Open-source governance: how the project stays open, transparent, and resistant to capture.
 
 ### [05-implementation-strategy/](05-implementation-strategy/)
-Phased rollout: Venezuela first, then Colombia, then broader Latin America.
+Phased rollout: first implementation country, then expansion to additional developing economies.
 
 ### [06-risks-and-challenges/](06-risks-and-challenges/)
 Data gaps, informal economy, political risk, infrastructure limitations, adoption barriers.

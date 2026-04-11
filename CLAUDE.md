@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-**econOS** is open-source economic data infrastructure for developing countries, starting in **Venezuela** and **Colombia**. It transforms how people access economic information -- replacing lagging, unreliable, or nonexistent official statistics with near real-time data that empowers individuals to make better decisions about work, investment, education, and mobility.
+**econOS** is open-source economic data infrastructure for developing and emerging economies. It transforms how people access economic information -- replacing lagging, unreliable, or nonexistent official statistics with near real-time data that empowers individuals to make better decisions about work, investment, education, and mobility.
 
 Rather than replacing markets, econOS acts as a **high-resolution information layer** that makes markets work better by making the economy visible to the people participating in it.
 
@@ -14,7 +14,7 @@ Rather than replacing markets, econOS acts as a **high-resolution information la
 
 The quality of an economy is the cumulative result of millions of resource allocation decisions. When capital flows to productive uses, when workers match to jobs that use their skills, when businesses open where demand exists, when students study fields the economy needs -- productivity rises and the economy grows.
 
-The quality of these decisions depends on the quality of available information. In Venezuela, the information layer of the economy collapsed: the BCV stopped publishing data, price controls destroyed price signals, currency controls destroyed exchange rate signals. **When the information layer breaks, the allocation layer breaks, and production follows.**
+The quality of these decisions depends on the quality of available information. In countries where the information layer has collapsed -- where central banks stop publishing data, price controls destroy price signals, and currency controls destroy exchange rate signals -- **the allocation layer breaks, and production follows.**
 
 econOS rebuilds the information layer as open-source infrastructure, accessible to everyone:
 
@@ -25,7 +25,7 @@ econOS rebuilds the information layer as open-source infrastructure, accessible 
 * **Diaspora families** see what their remittances actually buy and where they're needed most
 * **Migrants** make life-changing relocation decisions with actual data, not word-of-mouth
 
-The marginal value of information is highest when resources are scarcest. In a recovering economy like Venezuela's, every dollar of investment, every returning worker, every new business matters more -- because there's so little to work with. Misallocation in a capital-scarce recovery isn't just inefficient, it's devastating.
+The marginal value of information is highest when resources are scarcest. In a recovering or capital-scarce economy, every dollar of investment, every returning worker, every new business matters more -- because there's so little to work with. Misallocation in a capital-scarce recovery isn't just inefficient, it's devastating.
 
 ---
 
@@ -33,19 +33,19 @@ The marginal value of information is highest when resources are scarcest. In a r
 
 ### 3.1 The Data Void in Developing Countries
 
-In developed countries, economic data lags by weeks or months. In Venezuela:
+In developed countries, economic data lags by weeks or months. In many developing countries, the problem is qualitatively different:
 
-* GDP data was not published for years; credibility remains questioned
-* Inflation data was suppressed during hyperinflation (estimated 130,000%+ in 2018)
-* Employment statistics don't capture the 40-60%+ informal economy
-* 7+ million people emigrated with almost no labor market data to guide decisions
+* GDP data may not be published for years, or its credibility is questioned
+* Inflation data is suppressed or manipulated during crises
+* Employment statistics don't capture the 40-60%+ informal economy common in developing regions
+* Mass emigration occurs with almost no labor market data to guide decisions
 
-Colombia is better served (DANE is functional) but still operates with significant lag, doesn't capture 47% informal employment, and provides limited regional granularity.
+Even in countries with functional statistical agencies, data operates with significant lag, misses large informal sectors, and provides limited regional granularity.
 
 ### 3.2 Information Failures That Cause Misallocation
 
 * **Asymmetric Information** -- Adverse selection (Akerlof), moral hazard. Worse in developing countries where verification infrastructure is weaker.
-* **Price Signal Destruction** -- Price controls, currency controls, and inflation opacity prevent the price system from transmitting scarcity information. Venezuela is the extreme case.
+* **Price Signal Destruction** -- Price controls, currency controls, and inflation opacity prevent the price system from transmitting scarcity information. Common across developing economies in crisis.
 * **Search Costs & Fragmentation** -- Disconnected platforms, inconsistent data, information trapped in silos or unavailable entirely.
 * **Credence Goods** -- Markets where quality can't be evaluated (healthcare, education, professional services) -- exacerbated when no transparent quality signals exist.
 * **Information as Public Good** -- Valuable economic data is underproduced because it's non-excludable. The private sector captures the best data; the public gets nothing.
@@ -54,7 +54,7 @@ Colombia is better served (DANE is functional) but still operates with significa
 
 Hsieh and Klenow (2009) showed that resource misallocation in developing countries reduces manufacturing productivity by **30-60%** compared to the US. This gap is driven primarily by information failures: opaque markets, unreliable data, and regulatory distortions that prevent resources from flowing to their best use.
 
-For Venezuela's ~$100B economy, even a 10% reduction in misallocation through better information would mean ~$10B in additional annual output -- more than the entire annual remittance flow.
+For a developing economy of ~$100B, even a 10% reduction in misallocation through better information would mean ~$10B in additional annual output -- potentially more than entire annual remittance flows.
 
 ---
 
@@ -62,16 +62,31 @@ For Venezuela's ~$100B economy, even a 10% reduction in misallocation through be
 
 ### 4.1 Phase 1: Real-Time Data Infrastructure (CURRENT FOCUS)
 
-The foundation. Make the economy visible in real time using modern data sources:
+The foundation. econOS defines an **open standard** for economic data publication -- a protocol that standardizes how economic signals are collected, formatted, and distributed. Data flows through a **three-tier sensor model**:
 
+**Tier 1 -- Government-operated sensors** (data they already collect):
+* **Payment system volumes** (mobile payment systems, interbank transfers) -- flows through central bank existing systems
+* **Tax revenue data** by category and region -- tax authorities already collect this
+* **Banking aggregates** (deposits, credit, delinquency) -- financial regulators already require this
+* **Trade data** (imports/exports) -- customs agencies already process this
+* **Formal employment registrations** -- social security systems already track this
+
+**Tier 2 -- Regulated-entity sensors** (data institutions already report):
+* **Bank transaction aggregates** -- banks already report to regulators
+* **Payment platform volumes** (mobile wallets, digital payment apps) -- reported to financial supervisors
+* **Remittance corridor data** -- formal providers report volumes
+* **Card network aggregates** -- network-level transaction data
+
+**Tier 3 -- Community/open sensors** (anyone can build):
 * **Web-scraped prices** from online retailers, delivery apps, and e-commerce platforms
-* **Mobile payment data** (Pago Movil, Nequi, Daviplata) as spending activity signals
-* **Exchange rate tracking** (Binance P2P bolivar/USDT as de facto market rate)
-* **Job posting data** from Computrabajo, LinkedIn, elempleo.com, Facebook Groups
-* **Satellite imagery** (nighttime lights, commercial activity) as ground-truth economic activity proxy
-* **Remittance flow data** as diaspora economic support signal
+* **Exchange rate tracking** (P2P platforms, parallel market rates)
+* **Job posting data** from employment platforms, professional networks, social media
+* **Satellite imagery** (nighttime lights, commercial activity) as ground-truth proxy
+* **Remittance flow estimates** as diaspora economic support signal
 
-**Proof of concept:** Real-time consumer spending + price tracking in Venezuela. Data sources are accessible, the need is extreme, and the Billion Prices Project already proved web-scraped prices work for Venezuela.
+Governments and financial institutions already collect the most valuable economic data. econOS doesn't replicate this collection -- it standardizes how it's published. The open standard ensures the data flows into a public hub where anyone can access it. Tier 3 community sensors serve as both complement AND independent cross-validation: if government data diverges from independent signals, the divergence is detectable.
+
+**Critical design:** Tier 3 is permanent insurance, not temporary scaffolding. If a government goes dark (as central banks have done during crises), Tier 3 provides degraded but functional coverage. The system degrades gracefully, never fails completely.
 
 ### 4.2 Phase 2: Analytical Translation Layer
 
@@ -82,9 +97,19 @@ Process and combine raw signals into higher-order indicators:
 * Anomaly detection (emerging crises or opportunities)
 * Cross-signal validation (reconciling conflicting data sources)
 
-### 4.3 Phase 3: Pre-Built BI Views
+### 4.3 Phase 3: Ecosystem-Built Metrics and Applications
 
-Translate data into actionable views for the key decisions people face. **This is the product layer** -- where econOS becomes useful to regular people, not just data scientists:
+econOS is **GPS for economic data** -- open-source data pipes, not a platform. Like GPS broadcasts positioning signals and others build Google Maps, Waze, and Uber on top, econOS broadcasts economic signals and the ecosystem builds interpretations, metrics, and applications on top.
+
+**econOS builds the pipes (Phases 1-2). The ecosystem builds everything above that.**
+
+What the ecosystem builds on top of econOS data:
+
+* **Derived metrics**: Independent CPI estimates, regional activity indexes, recovery trackers -- each with their own methodology, competing and improving through transparency
+* **Decision-support tools**: Migration planners, remittance optimizers, career analyzers, business planning tools -- built by startups, NGOs, universities, diaspora organizations
+* **Research**: Academic studies using econOS data, policy analysis, validation studies
+
+The key decisions econOS data enables:
 
 * **"Where should I work?"** → Labor demand, wages, and cost of living by city
 * **"What should I study?"** → Field-level demand, wage trends, saturation risk
@@ -92,44 +117,60 @@ Translate data into actionable views for the key decisions people face. **This i
 * **"Is the recovery real?"** → Regional activity, sector growth, price stability
 * **"What does my remittance buy?"** → Real-time purchasing power at destination
 
-Design principles: mobile first, Spanish first, translate don't prescribe, show your work, avoid false precision.
+econOS might build a simple reference dashboard -- a basic data browser, like the built-in map on a GPS device. But the killer applications are built by others, serving their own users with their own judgment about what matters.
 
-### 4.4 Open-Source Data Infrastructure
+### 4.4 Open-Source Data Pipes
 
-All data treated as **public economic infrastructure**:
+All data treated as **public economic infrastructure** -- like GPS, like internet protocols:
 
-* Open data (all outputs freely available)
-* Open methodology (all models and weights published)
-* Open source (all code public)
-* Federated architecture (no single point of control)
+* Open data (all outputs freely available, no login, no paywall)
+* Open methodology (all collection methods, normalization rules, and quality flags published)
+* Open source (all code public from the first commit)
+* Federated architecture (no single point of control, forkable, replaceable)
+* Standardized schemas (common formats so anyone can build on the data)
 
-This addresses the public good problem: economic information with massive positive externalities is currently locked in private silos or missing entirely. econOS makes it public.
+This addresses the public good problem: economic information with massive positive externalities is currently locked in private silos or missing entirely. econOS makes it public. And the GPS architecture ensures that no single entity -- including econOS itself -- controls how that information is interpreted or used.
 
 ---
 
 ## 5. Governance
 
-### 5.1 Open-Source Model
+### 5.1 Open Standard, Community-Governed
 
-econOS is not controlled by any government, institution, or interest group. Venezuela demonstrated what happens when economic data is politically controlled. econOS is the antidote:
+econOS is an **open standard** -- a protocol for economic data publication. The standard is governed by a multi-stakeholder community (academics, civil society, technology contributors, diaspora representatives), not by any single government or institution. Governments implement the standard for Tier 1 data; regulated entities implement it for Tier 2; the community builds Tier 3 sensors. But the standard itself belongs to the community.
 
-* Distributed maintenance (like Linux or Wikipedia)
-* Community-driven methodology improvements
-* Can be maintained from anywhere -- Caracas, Bogota, Miami, Madrid
-* No single server to shut down, no organization to pressure
+This is the Estonia X-Road model: the government operates the infrastructure, but the open-source community governs the software. Or the IETF model: governments use the internet, but they don't control the HTTP specification.
 
-### 5.2 Transparency Requirements
+### 5.2 Separation of Roles
+
+* **Standard governance** (community): Defines data schemas, methodology rules, quality requirements, publication protocols. Changes follow an open RFC process with community review.
+* **Sensor operation** (government/entities/community): Implements the standard by collecting and publishing data. Government operates Tier 1, regulated entities Tier 2, community builds Tier 3.
+* **Interpretation** (ecosystem): Builds metrics, indexes, dashboards, and applications on top of published data. Anyone can interpret; no one controls interpretation.
+
+The government is a node operator, not the protocol designer. It publishes data under the standard but doesn't control what the standard requires or how the data is interpreted.
+
+### 5.3 Anti-Weaponization Design
+
+History has demonstrated what happens when economic data is politically controlled -- central banks and statistical agencies have gone dark during crises. econOS prevents this through five layers:
+
+1. **Open standard** -- methodology is public, auditable, forkable
+2. **Multi-source cross-validation** -- Tiers 1, 2, and 3 provide overlapping signals; manipulation is detectable
+3. **Published methodology as manipulation detector** -- consistency checks make data tampering mathematically visible
+4. **Community governance** -- government is a stakeholder in standard development, not the authority
+5. **Tier 3 fallback** -- community sensors provide degraded but functional coverage if any tier goes dark
+
+### 5.4 Transparency Requirements
 
 * Public documentation of all methodologies
-* Version-controlled model changes
-* Clear data source documentation
-* Independent auditability
+* Version-controlled standard changes with rationale
+* Clear data source documentation per tier
+* Independent auditability of every data stream
 
-### 5.3 Evolving Design
+### 5.5 Evolving Design
 
-* System evolves incrementally through community contribution
+* Standard evolves incrementally through community contribution
 * Governance emerges from operational experience, not designed in advance
-* Venezuela first, then Colombia, then broader Latin America
+* Start where institutions are functional (countries with credible statistical agencies provide validation benchmarks), then expand to countries with weaker data infrastructure
 
 ---
 
@@ -169,12 +210,12 @@ econOS is not controlled by any government, institution, or interest group. Vene
 
 ## 7. The Leapfrog Opportunity
 
-econOS doesn't bring Venezuela "up to" US standards. It leapfrogs past them.
+econOS doesn't bring developing countries "up to" developed-world standards. It leapfrogs past them.
 
-* **Size advantage**: Venezuela ~$100B, Colombia ~$340B vs. US $28T. Smaller economies are easier to instrument comprehensively in real time.
-* **No legacy system to fight**: BEA/BLS have decades of institutional inertia. Venezuela's statistical infrastructure collapsed -- there's nothing to compete with. Build the right thing from scratch.
-* **Digital-first payments**: Pago Movil, Zelle, and Binance P2P became default payment methods out of necessity. This digital-first payment landscape generates data exhaust that is a ready-made foundation for real-time measurement.
-* **Higher marginal impact**: In the US, real-time data beats a 14-day lag. In Venezuela, it fills a void where data doesn't exist at all.
+* **Size advantage**: Smaller economies ($100B-$500B) are easier to instrument comprehensively in real time than a $28T economy with continental complexity.
+* **No legacy system to fight**: Developed countries have decades of institutional inertia in their statistical agencies. Countries where statistical infrastructure has collapsed or never fully developed have nothing to compete with. Build the right thing from scratch.
+* **Digital-first payments**: In many developing countries, mobile payment systems and P2P platforms have become default payment methods out of necessity. This digital-first payment landscape generates data exhaust that is a ready-made foundation for real-time measurement.
+* **Higher marginal impact**: In developed countries, real-time data beats a 14-day lag. In countries with collapsed or absent statistics, it fills a void where data doesn't exist at all.
 
 Like M-Pesa in Kenya (skipping branch banking) or mobile phones in Africa (skipping landlines), econOS skips the legacy statistical infrastructure and goes straight to the better system.
 
@@ -184,7 +225,7 @@ Like M-Pesa in Kenya (skipping branch banking) or mobile phones in Africa (skipp
 
 ### 8.1 Informal Economy Blind Spot
 
-40-60%+ of Venezuelan economic activity is informal and largely invisible to digital data. Mitigation: satellite data, electricity consumption, and statistical estimation -- but this remains the biggest measurement gap.
+40-60%+ of economic activity in many developing countries is informal and largely invisible to digital data. Mitigation: satellite data, electricity consumption, and statistical estimation -- but this remains the biggest measurement gap.
 
 ### 8.2 Political Sensitivity
 
@@ -207,60 +248,66 @@ Publishing numbers that look precise but are actually uncertain can mislead. Mit
 ## 9. Design Principles
 
 * **Allocation-first**: Every feature is judged by "Does this help someone allocate resources better?" The data isn't the product -- better allocation decisions are the product.
-* **Open by default**: Data, code, and methodology are public. This is a structural response to Venezuela's BCV going dark -- the only architecture that survives political capture. econOS is economic GPS: open infrastructure anyone can build on.
-* **Mobile first, Spanish first**: Designed for a Venezuelan worker checking prices on a bus, not a researcher at a university. Page weight under 500KB, load time under 3 seconds on 3G, Venezuelan/Colombian Spanish (not Castilian).
-* **Translate, don't prescribe**: Show data, let people decide. econOS is a lens, not a compass. The labor market view shows wages and cost of living by city -- it doesn't say "move to Bogota." The user combines econOS data with everything else they know.
-* **Partial is better than nothing**: Don't wait for perfect data. In Venezuela, the alternative to imperfect data is not perfect data -- it is no data. Ship the first version as soon as it's minimally credible, with explicit confidence indicators and coverage gap reporting.
+* **Open by default**: Data, code, and methodology are public. This is a structural response to the repeated pattern of central banks and statistical agencies going dark -- the only architecture that survives political capture. econOS is economic GPS: open infrastructure anyone can build on.
+* **Mobile first, local language first**: Designed for a worker in a developing country checking prices on a bus, not a researcher at a university. Page weight under 500KB, load time under 3 seconds on 3G, in the local language of the implementation country.
+* **Translate, don't prescribe**: Show data, let people decide. econOS is a lens, not a compass. The labor market view shows wages and cost of living by city -- it doesn't say "move here." The user combines econOS data with everything else they know.
+* **Partial is better than nothing**: Don't wait for perfect data. In countries with collapsed statistics, the alternative to imperfect data is not perfect data -- it is no data. Ship the first version as soon as it's minimally credible, with explicit confidence indicators and coverage gap reporting.
 * **Transparency over authority**: Show your work. Every number links to methodology, data sources, and confidence intervals. Credibility comes from reproducibility, not institutional status. "We estimate 8-12% inflation" is more honest than "inflation was 9.7%."
-* **Redundancy over dependence**: Never rely on a single data source. Every key indicator is built from multiple independent sources so the system degrades gracefully when any source goes dark. The BCV was a single point of failure for Venezuela's entire information layer. econOS cannot replicate that architecture.
-* **Compound over heroic**: Small improvements that accumulate beat one-time breakthroughs. Data quality, trust, coverage, and community all compound. Ship early, improve continuously. The Venezuelan recovery itself is a compound process -- econOS supports it incrementally.
+* **Redundancy over dependence**: Never rely on a single data source. Every key indicator is built from multiple independent sources so the system degrades gracefully when any source goes dark. Single points of failure in national information layers have caused catastrophic data blackouts. econOS cannot replicate that architecture.
+* **Compound over heroic**: Small improvements that accumulate beat one-time breakthroughs. Data quality, trust, coverage, and community all compound. Ship early, improve continuously. Economic recovery itself is a compound process -- econOS supports it incrementally.
 * **Measure what matters to people**: Job quality over job count. Purchasing power over GDP. Geographic granularity that matches lived experience. Traditional statistics were designed for central banks making macro policy. econOS is designed for individuals making life decisions.
 
 ---
 
 ## 10. Implementation Strategy
 
-### Phase 1: Venezuela Proof of Concept
+### Phase 1: First-Country Proof of Concept
 
-* Real-time price tracker (web-scraped prices + Binance P2P exchange rate)
-* Consumer spending activity signal (Pago Movil volumes + satellite data)
+* Define the open standard (data schemas, methodology requirements, quality standards)
+* Real-time price tracker (web-scraped prices + P2P exchange rates)
+* Consumer spending activity signal (payment system volumes + satellite data)
 * Labor market intelligence (job postings + wage data + cost of living)
+* Partner with a functional national statistical agency for validation
 
-### Phase 2: Colombia Expansion
+### Phase 2: Validation and Expansion
 
-* Leverage DANE as validation benchmark
-* Nequi/Daviplata transaction signals
-* Cross-border Venezuela-Colombia economic intelligence
+* Validate standard against established statistical agency benchmarks
+* Onboard Tier 2 regulated-entity data sources (digital payment platforms, banking aggregates)
+* Expand to a second country to prove portability of the standard
 
-### Phase 3: BI Views and Product Layer
+### Phase 3: Ecosystem Development
 
-* Pre-built decision support tools for migration, career, business, investment
+* Reference dashboard and API for ecosystem builders
+* Decision support tools for migration, career, business, investment built by ecosystem
 * Mobile-first, accessible to regular people
 
-### Phase 4: Broader Latin America
+### Phase 4: Broader Adoption
 
-* Methodology proven in Venezuela/Colombia extends to other countries
-* Standardized economic data API for the region
+* Methodology proven in initial countries extends to additional developing economies
+* Standardized economic data API as regional and global public infrastructure
 
 ---
 
 ## 11. Philosophical Position
 
-econOS refuses the capitalism-vs-socialism binary that has trapped Latin American economic discourse. Both sides need accurate economic data: free-market advocates need price signals to work; social democrats need poverty data to target programs. Information quality is the common denominator.
+econOS refuses the capitalism-vs-socialism binary that has trapped economic discourse in many developing countries. Both sides need accurate economic data: free-market advocates need price signals to work; social democrats need poverty data to target programs. Information quality is the common denominator.
 
 **The core position:** econOS is not left or right. It is pro-information. It picks a methodology, not an ideology: make the economy legible so that ANY approach -- market-driven, state-directed, or hybrid -- works better.
 
-**Information democracy:** High-resolution economic data already exists -- Goldman Sachs has real-time spending trackers, Bloomberg terminals cost $25,000/year, hedge funds pay for satellite data. econOS redistributes information, not wealth. Give the empanada vendor in Barquisimeto the same economic visibility that a portfolio manager in New York has. This makes markets work better for everyone.
+**GPS for the economy:** econOS is an open standard for economic data -- infrastructure, not a platform. Like GPS (government-operated satellites broadcasting signals under an open specification, with anyone building navigation apps on top), econOS defines how economic data is published and anyone builds their own metrics, frameworks, and applications on top. The government operates key data sensors (they already collect this data). The community governs the standard. The ecosystem interprets the data. No single entity -- including the government or econOS itself -- controls what the data "means."
 
-**State-independent, not anti-state:** econOS doesn't need government permission, doesn't depend on government data, and can't be shut down by a government. Where statistical agencies function (Colombia/DANE), econOS complements. Where they've failed (Venezuela/BCV), econOS fills the void. The system measures economic reality regardless of who is in power.
+**Information democracy:** High-resolution economic data already exists -- Goldman Sachs has real-time spending trackers, Bloomberg terminals cost $25,000/year, hedge funds pay for satellite data. Governments already collect transaction volumes, tax revenue, and banking aggregates. econOS standardizes and opens this data so everyone has access. Give the street vendor in a developing country the same economic visibility that a portfolio manager in New York has. This makes markets work better for everyone.
 
-**The moral case:** Misallocation isn't abstract -- it's a Venezuelan family making a decade-defining emigration decision with information comparable to a coin flip. It's a student choosing a career with 20-year-old data. Access to economic information is not a luxury; it is a prerequisite for economic agency (Sen's capability approach). Better allocation is simultaneously more efficient and more fair, because it reduces the advantage of connections over competence.
+**State-enhanced, not state-dependent:** Governments already collect the most valuable economic data through regulatory authority. econOS doesn't replicate this -- it standardizes how it's published under a community-governed open standard. Where statistical agencies function, econOS provides the publication standard. Where they've failed or gone dark, community-operated Tier 3 sensors provide fallback coverage. The system is designed so government participation makes it excellent, but government absence doesn't make it fail. The lesson from every data blackout isn't "never let government touch data" -- it's "never let government be the sole, unauditable, ungoverned source."
+
+**The moral case:** Misallocation isn't abstract -- it's a family in a crisis economy making a decade-defining emigration decision with information comparable to a coin flip. It's a student choosing a career with 20-year-old data. Access to economic information is not a luxury; it is a prerequisite for economic agency (Sen's capability approach). Better allocation is simultaneously more efficient and more fair, because it reduces the advantage of connections over competence.
 
 **What econOS is NOT:**
 * Not a social credit system or individual scoring mechanism
 * Not a planned economy tool -- it enhances distributed decisions, not centralized ones
 * Not a surveillance apparatus -- aggregate data only, never individual tracking
 * Not a replacement for markets -- a better-informed market is still a market
+* Not a platform that controls interpretation -- it's infrastructure that broadcasts signals
 * Not aligned with any political party or ideology
 
 ---
@@ -271,14 +318,14 @@ econOS refuses the capitalism-vs-socialism binary that has trapped Latin America
 * How to maintain independence from political pressure?
 * How to fund open-source infrastructure sustainably?
 * How to balance transparency with privacy in small markets?
-* How to handle the dual-currency measurement challenge in Venezuela?
+* How to handle dual-currency or multi-currency measurement challenges?
 * How to build trust in an environment where official data has been weaponized?
 
 ---
 
 ## 13. Summary
 
-econOS rebuilds the economic information layer as open-source infrastructure for developing countries, starting in Venezuela.
+econOS rebuilds the economic information layer as open-source infrastructure for developing and emerging economies.
 
 The core logic:
 

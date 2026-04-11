@@ -1,36 +1,36 @@
-# Labor Market Signals: Real-Time Labor Market Intelligence for Venezuela and Colombia
+# Labor Market Signals: Real-Time Labor Market Intelligence for Developing Economies
 
 ## 1. Why Labor Market Signals Have the Highest Allocation Impact
 
 Of all the resource allocation decisions an economy makes, labor allocation is the most consequential. A machine placed in the wrong factory can be moved. Inventory shipped to the wrong warehouse can be redirected. Capital invested in the wrong asset can be sold. But a human being who spends five years in the wrong city, working in the wrong occupation, at a fraction of their productive potential -- that is a compounding loss that cannot be recovered. The years are gone.
 
-Labor misallocation is the most expensive form of waste in any economy because it compounds over entire careers. A petroleum engineer selling empanadas in Maracaibo is not just losing today's wage differential between engineering work and street food. He is losing the human capital accumulation he would gain from practicing engineering, the professional network he would build, the promotions he would earn, the savings he would generate, and the contributions he would make to a sector that needs his skills. Multiply that by ten years and the lifetime cost is staggering. Multiply it by the hundreds of thousands of Venezuelans in similar positions and the cost to the economy is a measurable fraction of GDP.
+Labor misallocation is the most expensive form of waste in any economy because it compounds over entire careers. A petroleum engineer selling street food in a major city is not just losing today's wage differential between engineering work and street food. He is losing the human capital accumulation he would gain from practicing engineering, the professional network he would build, the promotions he would earn, the savings he would generate, and the contributions he would make to a sector that needs his skills. Multiply that by ten years and the lifetime cost is staggering. Multiply it by the hundreds of thousands of crisis-economy workers in similar positions and the cost to the economy is a measurable fraction of GDP.
 
-This is not hypothetical. Venezuela's crisis produced the most visible mass labor misallocation event in modern Latin American history:
+This is not hypothetical. Economic crises in developing countries routinely produce mass labor misallocation events:
 
-- **Doctors driving taxis.** Venezuelan physicians who trained for a decade earn more driving for hire in Lima or Bogota than practicing medicine in Caracas. Some who stayed switched to informal commerce entirely. The country hemorrhaged medical professionals while simultaneously facing a healthcare crisis.
+- **Doctors driving taxis.** Physicians who trained for a decade earn more driving for hire in diaspora destinations than practicing medicine in their home country. Some who stayed switched to informal commerce entirely. The country hemorrhaged medical professionals while simultaneously facing a healthcare crisis.
 
-- **Engineers selling street food.** PDVSA's collapse eliminated the single largest employer of technical talent in the country. Engineers, geologists, and skilled technicians who spent careers in the oil industry had no comparable employer remaining. Many transitioned to survival commerce.
+- **Engineers selling street food.** The collapse of major state-owned enterprises eliminated the single largest employer of technical talent in the country. Engineers, geologists, and skilled technicians who spent careers in the dominant industry had no comparable employer remaining. Many transitioned to survival commerce.
 
 - **Teachers earning starvation wages.** Public school teachers who remained in formal employment earned the equivalent of $3-10 per month at various points during the crisis. The rational economic response was to abandon the classroom for any informal work that paid more -- which was essentially everything. Those who stayed taught while simultaneously working second and third jobs to survive.
 
-- **Nurses cleaning houses abroad.** Venezuelan nurses who migrated to Colombia, Peru, or Chile often could not get their credentials recognized. A nurse who would earn formal sector wages in a hospital instead earns informal wages cleaning houses -- not because she lacks the skill, but because she lacks the information, documentation, or connection to find the appropriate job.
+- **Nurses cleaning houses abroad.** Nurses who migrated to neighboring countries often could not get their credentials recognized. A nurse who would earn formal sector wages in a hospital instead earns informal wages cleaning houses -- not because she lacks the skill, but because she lacks the information, documentation, or connection to find the appropriate job.
 
-These are not edge cases. They are the dominant labor market story of Venezuela over the past decade. And the underlying cause, in every case, includes an information failure: people did not know where the jobs were, what they paid, what the cost of living was at potential destinations, or whether their skills would be recognized.
+These are not edge cases. They are the dominant labor market story of crisis economies. And the underlying cause, in every case, includes an information failure: people did not know where the jobs were, what they paid, what the cost of living was at potential destinations, or whether their skills would be recognized.
 
 ### The Migration Decision as the Ultimate Allocation Choice
 
-For the 7+ million Venezuelans who emigrated, the decision of where to go is the single highest-stakes economic allocation decision of their lives. It determines their income, their career trajectory, their children's education, and their family's economic future for years or decades.
+For the millions of crisis-economy emigrants, the decision of where to go is the single highest-stakes economic allocation decision of their lives. It determines their income, their career trajectory, their children's education, and their family's economic future for years or decades.
 
-Consider a 30-year-old Venezuelan nurse in Caracas in 2019, watching the economy collapse around her. She has a decision to make:
+Consider a 30-year-old nurse in the capital city, watching the economy collapse around her. She has a decision to make:
 
-- **Stay in Caracas.** She keeps her social network, her apartment, her family nearby. But her formal salary is worthless, the hospital she works at lacks supplies, and the economy shows no signs of recovery.
-- **Go to Bogota.** Colombia has a temporary protection framework for Venezuelans (ETPV). There are hospitals, there is demand for healthcare workers. But she does not know what nurses earn in Bogota, whether her Venezuelan nursing degree will be recognized, what rent costs in a neighborhood where she could live, or whether she would end up cleaning houses because the credential recognition process takes years.
-- **Go to Lima.** Peru has absorbed millions of Venezuelans. The nursing labor market there might be different. But she knows even less about Lima than about Bogota.
-- **Go to Santiago.** Chile is farther, more expensive to reach, but salaries are higher. The trade-offs are unclear.
-- **Go to Miami.** If she has any connection to a US visa pathway, the wage differential is enormous. But so are the barriers.
+- **Stay in the capital.** She keeps her social network, her apartment, her family nearby. But her formal salary is worthless, the hospital she works at lacks supplies, and the economy shows no signs of recovery.
+- **Go to the nearest major destination.** A neighboring country with functional institutions has a temporary protection framework. There are hospitals, there is demand for healthcare workers. But she does not know what nurses earn there, whether her nursing degree will be recognized, what rent costs in a neighborhood where she could live, or whether she would end up cleaning houses because the credential recognition process takes years.
+- **Go to a second regional destination.** The nursing labor market there might be different, with a different legal framework. But she knows even less about it.
+- **Go to a higher-income regional destination.** Farther, more expensive to reach, but salaries are higher. The trade-offs are unclear.
+- **Go to a developed-country destination.** If she has any connection to a visa pathway, the wage differential is enormous. But so are the barriers.
 
-Today, in 2026, this nurse makes this decision based on what her cousin told her, what she read in a WhatsApp group, and what she heard from a friend of a friend who went to Bogota two years ago. She is making a decision that will shape the next decade of her life based on anecdote and rumor, because no systematic information exists to help her.
+Today, this nurse makes this decision based on what her cousin told her, what she read in a WhatsApp group, and what she heard from a friend of a friend who went to the nearest destination two years ago. She is making a decision that will shape the next decade of her life based on anecdote and rumor, because no systematic information exists to help her.
 
 **This is the killer use case for econOS.** Not an academic exercise in economic measurement. A tool that helps real people make the most important economic decision they will ever face, with actual data instead of word-of-mouth.
 
@@ -38,12 +38,12 @@ Today, in 2026, this nurse makes this decision based on what her cousin told her
 
 When the nurse goes to the wrong city, the cost is not just her lost income differential. It cascades:
 
-- She earns less, so she sends smaller remittances home, so her family in Caracas has less to invest in her younger brother's education.
+- She earns less, so she sends smaller remittances home, so her family has less to invest in her younger brother's education.
 - She is underemployed, so she does not build the professional capital she would accumulate in a well-matched position, so her earnings trajectory is permanently lower.
 - She occupies a low-skill job in the destination economy that a local worker could fill, while a nursing position elsewhere goes unfilled. Two labor markets are simultaneously worse off.
-- Her negative experience (or her silence about a mediocre outcome) feeds back into the information network. The next nurse in Caracas hears that "Bogota didn't work out" and makes a different decision based on a single anecdote -- possibly an even worse one.
+- Her negative experience (or her silence about a mediocre outcome) feeds back into the information network. The next nurse back home hears that "the destination didn't work out" and makes a different decision based on a single anecdote -- possibly an even worse one.
 
-At the scale of 7 million emigrants, these compounding micro-misallocations add up to a macro-level drag on both Venezuela's diaspora productivity and the receiving countries' labor market efficiency. The aggregate cost is not calculable with precision, but it is enormous.
+At the scale of millions of emigrants, these compounding micro-misallocations add up to a macro-level drag on both the diaspora's productivity and the receiving countries' labor market efficiency. The aggregate cost is not calculable with precision, but it is enormous.
 
 ### Why This Is the Proving Ground for econOS
 
@@ -53,7 +53,7 @@ If econOS can demonstrably improve labor matching -- fewer people in the wrong c
 
 ## 2. What We Need to Measure
 
-To construct labor market intelligence that actually helps a Venezuelan nurse decide where to work, or a Colombian employer find the skills they need, or a student choose what to study, we need six categories of information, updated as continuously as possible.
+To construct labor market intelligence that actually helps a nurse in a crisis economy decide where to work, or an employer in a neighboring country find the skills they need, or a student choose what to study, we need six categories of information, updated as continuously as possible.
 
 ### 2.1 Labor Demand by Sector and Geography
 
@@ -65,18 +65,18 @@ This means tracking, by city and by occupation/sector:
 - Whether demand is growing or shrinking
 - Whether the demand is formal (with contracts, benefits) or informal (day labor, gig work, self-employment opportunities)
 
-For Venezuela, where the formal labor market collapsed and is unevenly recovering, demand signals are particularly sparse. For Colombia, where the formal sector is functional but nearly half of employment is informal, demand is partially visible but fundamentally incomplete.
+In a crisis economy where the formal labor market collapsed and is unevenly recovering, demand signals are particularly sparse. In a middle-income developing country where the formal sector is functional but nearly half of employment is informal, demand is partially visible but fundamentally incomplete.
 
 ### 2.2 Wage Levels by Occupation and City
 
-Knowing that there are nursing jobs in Bogota is not enough. The nurse needs to know: **what do they pay?**
+Knowing that there are nursing jobs in a major city is not enough. The nurse needs to know: **what do they pay?**
 
 Wage data must be:
 - Occupation-specific (a nurse, not "healthcare workers" as a category)
-- City-specific (Bogota wages are different from Cucuta wages)
+- City-specific (capital city wages are different from border city wages)
 - Disaggregated by formality (formal wages vs. informal wages, which can differ by 2-3x)
-- Denominated in meaningful terms (in Venezuela, wages must be expressed in dollar equivalents because bolivar figures are unintelligible without an exchange rate)
-- Current (wage data from 2023 may be wildly outdated in a rapidly changing economy)
+- Denominated in meaningful terms (in a crisis economy, wages must be expressed in dollar equivalents because local currency figures are unintelligible without an exchange rate)
+- Current (wage data from two years ago may be wildly outdated in a rapidly changing economy)
 
 ### 2.3 Cost of Living by City
 
