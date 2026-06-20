@@ -79,6 +79,8 @@ The lesson is NOT "never let government touch data." It's "never let government 
 - Institutional modernization (open data standards are the global direction)
 - Reduced burden (standardization makes existing reporting more efficient)
 
+**The instrument is a publish-mandate.** Adoption takes concrete legal form as a transparency/disclosure law requiring institutions to publish data they already collect -- not a new data agency, not government control of the data. The most direct path to enacting it is a political champion who runs on data transparency as a platform commitment; the architecture keeps the system independent of that champion so it survives changes of government, and a pre-mandate Tier 3 proof-of-concept demonstrates the policy before it exists. See [open-standard-governance.md](../00-foundations/architecture/open-standard-governance.md) §7.
+
 ## International Precedents
 
 - **Estonia X-Road**: Open-source (MIT license), government operates infrastructure, community governs the standard. Now adopted by multiple countries.

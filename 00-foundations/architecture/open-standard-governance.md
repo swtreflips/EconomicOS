@@ -260,6 +260,26 @@ Despite the challenges, several forces push toward adoption:
 - **Reduced reporting burden.** Standardization makes existing reporting more efficient. Instead of bespoke formats for each international organization, a single standard serves all.
 - **Credibility through verification.** A government that publishes under an open standard with independent cross-validation gains MORE credibility than one that publishes without oversight -- because the verification is built in.
 
+### The Concrete Instrument: A Publish-Mandate
+
+Adoption is not vague goodwill -- it has a specific legal form: a **mandate to publish**. The government enacts a transparency rule requiring institutions that already collect economic data (central bank, banks, payment platforms, customs, tax authority) to publish anonymized aggregates to the open hub under the econOS standard.
+
+- **It is a disclosure law, not a new data agency.** The closest analogues are financial-disclosure requirements, open-records laws, and securities-reporting mandates -- rules that compel publication of data that already exists. The government builds no new bureaucracy and gains no new control over the data; it only requires that what is already collected becomes public in a standard format.
+- **The government does not touch interpretation.** The mandate covers format, frequency, and completeness of publication. It says nothing about what the numbers mean. Interpretation stays with the ecosystem.
+- **Published data cannot be un-published.** Once aggregates are in the open, mirrored, forkable hub, repeal of the mandate cannot retract the archive. The mandate's benefit compounds and its reversal is bounded.
+
+### The Political Champion Path
+
+Someone has to enact the mandate. The most direct path is a **political champion** -- an administration, a legislator, or a candidate who runs on data transparency as a platform commitment and passes the publish-mandate on taking office.
+
+This raises an obvious tension with the project's non-partisan requirement, and the resolution is structural rather than rhetorical:
+
+- The champion advances the **mandate**. The architecture -- open standard, community governance, multi-tier cross-validation, Tier 3 fallback -- keeps the **system** independent of the champion. It is designed to survive the administration that created it.
+- A successor can repeal the mandate, but cannot un-publish the archive, cannot shut down Tier 3, and cannot capture a community-governed standard. The downside of politicization is bounded by the same anti-weaponization architecture that bounds every other failure mode.
+- **Before taking office, the champion has no power to compel anyone.** So the proof-of-concept is necessarily a Tier 3 build from public data -- and that build doubles as the campaign's most persuasive asset: a live, daily, independent economic signal that official data doesn't provide. It demonstrates the policy before the policy exists.
+
+The honest framing: **government participation is an accelerant, not a dependency.** A champion who passes the mandate makes the system comprehensive. A champion who loses, or a successor who repeals, leaves the system degraded to Tier 3 -- which is still infinitely better than the data void it replaced.
+
 ### The Practical Sequence
 
 1. **Start where institutions are functional.** The first implementation partner should be a country with a credible statistical agency, existing open data initiatives, and institutional capacity. This validates the standard.

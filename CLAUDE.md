@@ -172,6 +172,18 @@ History has demonstrated what happens when economic data is politically controll
 * Governance emerges from operational experience, not designed in advance
 * Start where institutions are functional (countries with credible statistical agencies provide validation benchmarks), then expand to countries with weaker data infrastructure
 
+### 5.6 The Government Mechanism: A Mandate to Publish, Not to Control
+
+The government's role is narrow and specific: **legally enforce the publication of data that institutions already collect** -- a transparency mandate, not a new data agency and not control over the data itself.
+
+* **It is a disclosure law, not a bureaucracy.** Closer to financial-disclosure rules or open-records mandates than to building a statistical institute. The government compels banks, payment platforms, customs, and tax authorities to publish their aggregates to a public, open hub under the standard. It does not host, curate, interpret, or gatekeep the data.
+* **Published data cannot be un-published.** Once aggregates flow into the open, mirrored, forkable hub, no future administration can retroactively suppress them. The mandate's value compounds; its repeal cannot erase the archive.
+* **Accelerant, not dependency.** The mandate makes the system excellent. Its absence leaves the system degraded (Tier 3 only), not dead. econOS never depends on the government keeping its word.
+
+**The adoption vehicle.** A publish-mandate is a political act -- it requires someone with the authority, or the campaign, to enact it. A political champion (for example, a candidate who runs on it as a platform commitment) is a legitimate and powerful path to adoption. The reconciliation with non-partisanship is structural, not rhetorical: the champion advances the *mandate*, but the architecture -- open standard, community governance, Tier 3 fallback -- keeps the *system* independent of whoever championed it, so it survives changes of government. econOS is championed politically but owned by no one.
+
+**Before the mandate exists, Tier 3 is the proof.** A political champion cannot compel anyone before taking office. So the first artifact is a Tier 3 proof-of-concept built entirely from public data -- and it doubles as the live demonstration of the policy: *this is what even the fallback tier produces; the mandate makes it comprehensive.*
+
 ---
 
 ## 6. Theoretical Foundations
@@ -225,7 +237,7 @@ Like M-Pesa in Kenya (skipping branch banking) or mobile phones in Africa (skipp
 
 ### 8.1 Informal Economy Blind Spot
 
-40-60%+ of economic activity in many developing countries is informal and largely invisible to digital data. Mitigation: satellite data, electricity consumption, and statistical estimation -- but this remains the biggest measurement gap.
+40-60%+ of economic activity in many developing countries is informal and largely invisible to digital data. This is the single hardest measurement problem in the project, and econOS does not claim to solve it. The honest posture: **be the first system that even attempts to estimate the informal economy in real time -- openly, with proxies, and with explicit error bars** -- rather than claiming a precision that doesn't exist. Partial estimation via proxies (satellite nighttime lights, electricity consumption, cash-in-circulation patterns, household surveys, mobile-money penetration) beats the status quo of no estimate at all. The coverage gap is stated prominently, never buried -- consistent with the false-precision principle. Government participation helps here specifically: survey, utility, and cash-logistics data unlock informal-sector proxies that scraping alone cannot reach.
 
 ### 8.2 Political Sensitivity
 
@@ -298,7 +310,7 @@ econOS refuses the capitalism-vs-socialism binary that has trapped economic disc
 
 **Information democracy:** High-resolution economic data already exists -- Goldman Sachs has real-time spending trackers, Bloomberg terminals cost $25,000/year, hedge funds pay for satellite data. Governments already collect transaction volumes, tax revenue, and banking aggregates. econOS standardizes and opens this data so everyone has access. Give the street vendor in a developing country the same economic visibility that a portfolio manager in New York has. This makes markets work better for everyone.
 
-**State-enhanced, not state-dependent:** Governments already collect the most valuable economic data through regulatory authority. econOS doesn't replicate this -- it standardizes how it's published under a community-governed open standard. Where statistical agencies function, econOS provides the publication standard. Where they've failed or gone dark, community-operated Tier 3 sensors provide fallback coverage. The system is designed so government participation makes it excellent, but government absence doesn't make it fail. The lesson from every data blackout isn't "never let government touch data" -- it's "never let government be the sole, unauditable, ungoverned source."
+**State-enhanced, not state-dependent:** Governments already collect the most valuable economic data through regulatory authority. econOS doesn't replicate this -- it standardizes how it's published under a community-governed open standard. The government's contribution takes the concrete form of a **mandate to publish** what it already collects -- a disclosure law, not control of the data. Where statistical agencies function, econOS provides the publication standard. Where they've failed or gone dark, community-operated Tier 3 sensors provide fallback coverage. The system is designed so government participation makes it excellent, but government absence doesn't make it fail. The lesson from every data blackout isn't "never let government touch data" -- it's "never let government be the sole, unauditable, ungoverned source."
 
 **The moral case:** Misallocation isn't abstract -- it's a family in a crisis economy making a decade-defining emigration decision with information comparable to a coin flip. It's a student choosing a career with 20-year-old data. Access to economic information is not a luxury; it is a prerequisite for economic agency (Sen's capability approach). Better allocation is simultaneously more efficient and more fair, because it reduces the advantage of connections over competence.
 
